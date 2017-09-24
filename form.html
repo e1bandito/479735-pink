@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Конкурс</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="./index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип" width="75" height="22">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="./index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="./photo.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="page-main">
+    <h2 class="visually-hidden">Форма для конкурса</h2>
+    <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <form  class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="page-main__full-name">
+        <label class="page-main__label" for="last-name">Фамилия:</label>
+        <input class="page-main__input" type="text" name="Фамилия" id="last-name" value="Укажите фамилию *">
+        <label class="page-main__label" for="first-name">Имя:</label>
+        <input class="page-main__input" type="text" name="Имя" id="first-name" value="Укажите имя *">
+        <label class="page-main__label" for="patronymic">Отчество:</label>
+        <input class="page-main__input" type="text" name="Отчество" id="patronymic" value="Укажите отчество *">
+      </div>
+      <div class="page-main__achivments">
+        <h3 class="page-main__title">Ваши безбашенные достижения в путешествии</h3>
+        <input class="page-main__checkbox" type="checkbox" name="Селфис акулой" id="shark" checked>
+        <label for="shark" class="page-main__checkbox-label">Сделал селфи с акулой</label>
+        <input class="page-main__checkbox" type="checkbox" name="Обгорел на пляже" id="beach" checked>
+        <label for="beach" class="page-main__checkbox-label">Обгорел на пляже</label>
+        <input class="page-main__checkbox" type="checkbox" name="Видел Чака Норриса" id="fatality">
+        <label for="fatality" class="page-main__checkbox-label">Видел Чака Норриса</label>
+        <input class="page-main__checkbox" type="checkbox" name="Накупил сувениров" id="souvenir">
+        <label for="souvenir" class="page-main__checkbox-label">Накупил сувениров</label>
+        <input class="page-main__checkbox" type="checkbox" name="Удержал башню" id="tower" checked>
+        <label for="tower" class="page-main__checkbox-label">Удержал башню</label>
+        <input class="page-main__checkbox" type="checkbox" name="Разгромил отель" id="hotel">
+        <label for="hotel" class="page-main__checkbox-label">Разгромил отель</label>
+      </div>
+      <div class="page-main__contacts">
+        <label class="page-main__label" for="telephone">Номер телефона</label>
+        <input class="page-main__input" type="text" name="Номер телефона" id="telephone" value="Номер, пожалуйста">
+        <label class="page-main__label" for="adress">Адрес почты</label>
+        <input class="page-main__input" type="text" name="Адрес почты" id="adress" value="Введите почту *">
+      </div>
+      <div class="page-main__app-type">
+        <h3 class="page-main__title">С каким приложением путешествовали?</h3>
+        <input class="page-main__checkbox" type="radio" id="ios" name="os" checked>
+        <label for="ios" class="page-main__checkbox-label">Pink для iOS</label>
+        <input class="page-main__checkbox" type="radio" id="android" name="os">
+        <label for="android" class="page-main__checkbox-label">Pink на Android</label>
+        <input class="page-main__checkbox" type="radio" id="windows-phone" name="os">
+        <label for="windows-phone" class="page-main__checkbox-label">Windows Phone</label>
+      </div>
+      <div class="page-main__impression">
+        <h3 class="page-main__title">Опишите свои эмоции</h3>
+        <textarea class="page-main__textarea" name="impression" rows="8" cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
+      </div>
+      <button class="button page-main__button" type="submit">Отправить форму</button>
+      <p class="page-main__text"><span class="page-main__text--red">*</span> — обязательные поля</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a href="" class="page-footer__logo">
+      <img class="page-footer__logo-image" src="http://placehold.it/147x40" alt="Логотип">
+    </a>
+    <div class="page-footer__social">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link page-footer__link--twitter">Twitter</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link page-footer__link--facebook">Facebook</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link page-footer__link--youtube">YouTube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">
+      <p class="page-footer__text">Разработано</p>
+      <a href="#" class="page-footer__copyright-link">
+        <img class="page-footer__copyright-image" src="./img/htmlacademy.svg" alt="copyright" width="27" height="34">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

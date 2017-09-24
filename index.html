@@ -1,29 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
+
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Pink</h1>
-      <img src="http://placehold.it/75x22" alt="Логотип" class="page-header__logo">
-      <label class="visually-hidden" for="nav-button">Меню</label>
-      <input class="page-header__nav-button" type="checkbox" name="nav-button" id="nav-button">
-      <ul class="page-header__list">
-        <li class="page-header__item"><a href="#" class="page-header__link">Главная</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Фотографии</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Конкурс</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Html Academy</a></li>
-      </ul>
-      <img src="http://placehold.it/320x314" alt="Красный фильтр" class="page-header__image">
-      <a href="" class="page-header__link-market"></a>
-      <ul class="page-header__market-list">
-        <li class="page-header__market-item"><a href="#" class="page-header__market-link">Apple</a></li>
-        <li class="page-header__market-item"><a href="#" class="page-header__market-link">Android</a></li>
-        <li class="page-header__market-item"><a href="#" class="page-header__market-link">Windows Phone</a></li>
-      </ul>
-      <p class="page-header__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип" width="75" height="22">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="#" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img src="http://placehold.it/320x314" alt="Красный фильтр" class="page-header__image" width="320" height="314">
+      <nav class="market-nav">
+        <a href="#" class="button market-nav__link-market">Скачать приложение</a>
+        <ul class="market-nav__list">
+          <li class="market-nav__item">
+            <a href="#" class="market-nav__link">Apple</a>
+          </li>
+          <li class="market-nav__item">
+            <a href="#" class="market-nav__link">Android</a>
+          </li>
+          <li class="market-nav__item">
+            <a href="#" class="market-nav__link">Windows Phone</a>
+          </li>
+        </ul>
+        <p class="market-nav__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </nav>
     </header>
+
+    <main class="page-main">
+
+      <section class="features">
+        <h2 class="features-title">Устали от серости мегаполиса?</h2>
+        <h2 class="features-title">Нам есть, что вам
+  предложить!</h2>
+        <div class="features__container">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__title-inner">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title-inner">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__title-inner">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="features__image" src="http://placehold.it/157x320" alt="Iphone 8 экран" width="157" height="320">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="tariff-plan">
+        <h2 class="visually-hidden">Тарифный план</h2>
+        <div class="tariff-plan__wrapper slider">
+          <ul class="tariff-plan__list slider__list">
+            <li class="tariff-plan__item slider__item">
+              <div class="tariff-plan__header">
+                <h3 class="tariff-plan__title">Стандарт</h3>
+                <p class="tariff-plan__price">3,99 usd</p>
+              </div>
+              <p class="tariff-plan__text">Розовый фильтр</p>
+              <p class="tariff-plan__text">Смайлики</p>
+              <p class="tariff-plan__text">Комментарии</p>
+            </li>
+            <li class="tariff-plan__item slider__item">
+              <div class="tariff-plan__header">
+                <h3 class="tariff-plan__title">Стандарт</h3>
+                <p class="tariff-plan__price">3,99 usd</p>
+              </div>
+              <p class="tariff-plan__text">Розовый фильтр</p>
+              <p class="tariff-plan__text">Смайлики</p>
+              <p class="tariff-plan__text">Комментарии</p>
+            </li>
+            <li class="tariff-plan__item slider__item">
+              <div class="tariff-plan__header">
+                <h3 class="tariff-plan__title">Стандарт</h3>
+                <p class="tariff-plan__price">3,99 usd</p>
+              </div>
+              <p class="tariff-plan__text">Розовый фильтр</p>
+              <p class="tariff-plan__text">Смайлики</p>
+              <p class="tariff-plan__text">Комментарии</p>
+            </li>
+          </ul>
+          <p class="tariff-plan__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <b class="contacts__subtitle">Звоните:</b>
+          <p class="contacts__text">+7 (812) 555-66-66</p>
+          <b class="contacts__subtitle">Пишите:</b>
+          <p class="contacts__text">mail@htmlacademy.ru</p>
+          <b class="contacts__subtitle">Приезжайте в гости:</b>
+          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </section>
+      <div class="map"></div>
+    </main>
+
   </body>
 </html>

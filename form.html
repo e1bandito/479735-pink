@@ -33,51 +33,51 @@
   <main class="page-main">
     <h2 class="visually-hidden">Форма для конкурса</h2>
     <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-    <form  class="page-main__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="page-main__full-name">
-        <label class="page-main__label" for="last-name">Фамилия:</label>
-        <input class="page-main__input" type="text" name="Фамилия" id="last-name" value="Укажите фамилию *">
-        <label class="page-main__label" for="first-name">Имя:</label>
-        <input class="page-main__input" type="text" name="Имя" id="first-name" value="Укажите имя *">
-        <label class="page-main__label" for="patronymic">Отчество:</label>
-        <input class="page-main__input" type="text" name="Отчество" id="patronymic" value="Укажите отчество *">
+    <form  class="contest-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contest-form__full-name">
+        <label class="contest-form__label" for="last-name">Фамилия:</label>
+        <input class="contest-form__input" type="text" name="last name" id="last-name" value="Укажите фамилию *">
+        <label class="contest-form__label" for="first-name">Имя:</label>
+        <input class="contest-form__input" type="text" name="first name" id="first-name" value="Укажите имя *">
+        <label class="contest-form__label" for="patronymic">Отчество:</label>
+        <input class="contest-form__input" type="text" name="patronymic" id="patronymic" value="Укажите отчество *">
       </div>
-      <div class="page-main__achivments">
-        <h3 class="page-main__title">Ваши безбашенные достижения в путешествии</h3>
-        <input class="page-main__checkbox" type="checkbox" name="Селфис акулой" id="shark" checked>
-        <label for="shark" class="page-main__checkbox-label">Сделал селфи с акулой</label>
-        <input class="page-main__checkbox" type="checkbox" name="Обгорел на пляже" id="beach" checked>
-        <label for="beach" class="page-main__checkbox-label">Обгорел на пляже</label>
-        <input class="page-main__checkbox" type="checkbox" name="Видел Чака Норриса" id="fatality">
-        <label for="fatality" class="page-main__checkbox-label">Видел Чака Норриса</label>
-        <input class="page-main__checkbox" type="checkbox" name="Накупил сувениров" id="souvenir">
-        <label for="souvenir" class="page-main__checkbox-label">Накупил сувениров</label>
-        <input class="page-main__checkbox" type="checkbox" name="Удержал башню" id="tower" checked>
-        <label for="tower" class="page-main__checkbox-label">Удержал башню</label>
-        <input class="page-main__checkbox" type="checkbox" name="Разгромил отель" id="hotel">
-        <label for="hotel" class="page-main__checkbox-label">Разгромил отель</label>
+      <div class="contest-form__achievements">
+        <h3 class="contest-form__title">Ваши безбашенные достижения в путешествии</h3>
+        <input class="contest-form__checkbox" type="checkbox" name="selfie with shark" id="shark" checked>
+        <label for="shark" class="contest-form__checkbox-label">Сделал селфи с акулой</label>
+        <input class="contest-form__checkbox" type="checkbox" name="Burnt on the beach" id="beach" checked>
+        <label for="beach" class="contest-form__checkbox-label">Обгорел на пляже</label>
+        <input class="contest-form__checkbox" type="checkbox" name="I saw Chuck Norris" id="fatality">
+        <label for="fatality" class="contest-form__checkbox-label">Видел Чака Норриса</label>
+        <input class="contest-form__checkbox" type="checkbox" name="buy souvenirs" id="souvenir">
+        <label for="souvenir" class="contest-form__checkbox-label">Накупил сувениров</label>
+        <input class="contest-form__checkbox" type="checkbox" name="protect the tower" id="tower" checked>
+        <label for="tower" class="contest-form__checkbox-label">Удержал башню</label>
+        <input class="contest-form__checkbox" type="checkbox" name="destroy hotel" id="hotel">
+        <label for="hotel" class="contest-form__checkbox-label">Разгромил отель</label>
       </div>
-      <div class="page-main__contacts">
-        <label class="page-main__label" for="telephone">Номер телефона</label>
-        <input class="page-main__input" type="text" name="Номер телефона" id="telephone" value="Номер, пожалуйста">
-        <label class="page-main__label" for="adress">Адрес почты</label>
-        <input class="page-main__input" type="text" name="Адрес почты" id="adress" value="Введите почту *">
+      <div class="contest-form__contacts">
+        <label class="contest-form__label" for="telephone">Номер телефона</label>
+        <input class="contest-form__input" type="text" name="telephone number" id="telephone" value="Номер, пожалуйста">
+        <label class="contest-form__label" for="adress">post adress</label>
+        <input class="contest-form__input" type="text" name="Адрес почты" id="adress" value="Введите почту *">
       </div>
-      <div class="page-main__app-type">
-        <h3 class="page-main__title">С каким приложением путешествовали?</h3>
-        <input class="page-main__checkbox" type="radio" id="ios" name="os" value="ios" checked>
-        <label for="ios" class="page-main__checkbox-label">Pink для iOS</label>
-        <input class="page-main__checkbox" type="radio" id="android" name="os" value="android">
-        <label for="android" class="page-main__checkbox-label">Pink на Android</label>
-        <input class="page-main__checkbox" type="radio" id="windows-phone" name="os" value="windpws-phone">
-        <label for="windows-phone" class="page-main__checkbox-label">Windows Phone</label>
+      <div class="contest-form__app-type">
+        <h3 class="contest-form__title">С каким приложением путешествовали?</h3>
+        <input class="contest-form__checkbox" type="radio" id="ios" name="os" value="ios" checked>
+        <label for="ios" class="contest-form__checkbox-label">Pink для iOS</label>
+        <input class="contest-form__checkbox" type="radio" id="android" name="os" value="android">
+        <label for="android" class="contest-form__checkbox-label">Pink на Android</label>
+        <input class="contest-form__checkbox" type="radio" id="windows-phone" name="os" value="windpws-phone">
+        <label for="windows-phone" class="contest-form__checkbox-label">Windows Phone</label>
       </div>
-      <div class="page-main__impression">
-        <h3 class="page-main__title">Опишите свои эмоции</h3>
-        <textarea class="page-main__textarea" name="impression" rows="8" cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
+      <div class="contest-form__impression">
+        <h3 class="contest-form__title">Опишите свои эмоции</h3>
+        <textarea class="contest-form__textarea" name="impression" rows="8" cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
-      <button class="button page-main__button" type="submit">Отправить форму</button>
-      <p class="page-main__text"><span class="page-main__text--red">*</span> — обязательные поля</p>
+      <button class="button contest-form__button" type="submit">Отправить форму</button>
+      <p class="contest-form__text"><span class="contest-form__text--red">*</span> — обязательные поля</p>
     </form>
   </main>
   <section class="modal">

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Конкурс</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="./index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Логотип" width="75" height="22">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="./index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="./photo.html" class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#" class="main-nav__link">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="page-main">
+    <h2 class="visually-hidden">Форма для конкурса</h2>
+    <p class="page-main__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <form  class="contest-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contest-form__full-name">
+        <label class="contest-form__label" for="last-name">Фамилия:</label>
+        <input class="contest-form__input" type="text" name="last name" id="last-name" value="Укажите фамилию *">
+        <label class="contest-form__label" for="first-name">Имя:</label>
+        <input class="contest-form__input" type="text" name="first name" id="first-name" value="Укажите имя *">
+        <label class="contest-form__label" for="patronymic">Отчество:</label>
+        <input class="contest-form__input" type="text" name="patronymic" id="patronymic" value="Укажите отчество *">
+      </div>
+      <div class="contest-form__achievements">
+        <h3 class="contest-form__title">Ваши безбашенные достижения в путешествии</h3>
+        <input class="contest-form__checkbox" type="checkbox" name="selfie with shark" id="shark" checked>
+        <label for="shark" class="contest-form__checkbox-label">Сделал селфи с акулой</label>
+        <input class="contest-form__checkbox" type="checkbox" name="Burnt on the beach" id="beach" checked>
+        <label for="beach" class="contest-form__checkbox-label">Обгорел на пляже</label>
+        <input class="contest-form__checkbox" type="checkbox" name="I saw Chuck Norris" id="fatality">
+        <label for="fatality" class="contest-form__checkbox-label">Видел Чака Норриса</label>
+        <input class="contest-form__checkbox" type="checkbox" name="buy souvenirs" id="souvenir">
+        <label for="souvenir" class="contest-form__checkbox-label">Накупил сувениров</label>
+        <input class="contest-form__checkbox" type="checkbox" name="protect the tower" id="tower" checked>
+        <label for="tower" class="contest-form__checkbox-label">Удержал башню</label>
+        <input class="contest-form__checkbox" type="checkbox" name="destroy hotel" id="hotel">
+        <label for="hotel" class="contest-form__checkbox-label">Разгромил отель</label>
+      </div>
+      <div class="contest-form__contacts">
+        <label class="contest-form__label" for="telephone">Номер телефона</label>
+        <input class="contest-form__input" type="text" name="telephone number" id="telephone" value="Номер, пожалуйста">
+        <label class="contest-form__label" for="adress">post adress</label>
+        <input class="contest-form__input" type="text" name="Адрес почты" id="adress" value="Введите почту *">
+      </div>
+      <div class="contest-form__app-type">
+        <h3 class="contest-form__title">С каким приложением путешествовали?</h3>
+        <input class="contest-form__checkbox" type="radio" id="ios" name="os" value="ios" checked>
+        <label for="ios" class="contest-form__checkbox-label">Pink для iOS</label>
+        <input class="contest-form__checkbox" type="radio" id="android" name="os" value="android">
+        <label for="android" class="contest-form__checkbox-label">Pink на Android</label>
+        <input class="contest-form__checkbox" type="radio" id="windows-phone" name="os" value="windpws-phone">
+        <label for="windows-phone" class="contest-form__checkbox-label">Windows Phone</label>
+      </div>
+      <div class="contest-form__impression">
+        <h3 class="contest-form__title">Опишите свои эмоции</h3>
+        <textarea class="contest-form__textarea" name="impression" rows="8" cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
+      </div>
+      <button class="button contest-form__button" type="submit">Отправить форму</button>
+      <p class="contest-form__text"><span class="contest-form__text--red">*</span> — обязательные поля</p>
+    </form>
+  </main>
+  <section class="modal">
+    <div class="modal__info">
+      <h3 class="modal__title">Ваша заявка отправлена</h3>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    </div>
+    <div class="modal__button-wrapper">
+      <button class="button modal__button" type="button">Закрыть окно</button>
+    </div>
+  </section>
+  <section class="modal-error">
+    <div class="modal-error__info">
+      <h3 class="modal-error__title">Что-то пошло не так!</h3>
+      <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <div class="modal-error__button-wrapper">
+      <button class="button modal-error__button" type="button">OK</button>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <a href="" class="page-footer__logo">
+      <img class="page-footer__logo-image" src="http://placehold.it/147x40" alt="Логотип">
+    </a>
+    <div class="page-footer__social">
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link page-footer__link--twitter">Twitter</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link page-footer__link--facebook">Facebook</a>
+        </li>
+        <li class="page-footer__item">
+          <a href="#" class="page-footer__link page-footer__link--youtube">YouTube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright">
+      <p class="page-footer__text">Разработано</p>
+      <a href="#" class="page-footer__copyright-link">
+        <img class="page-footer__copyright-image" src="./img/htmlacademy.svg" alt="copyright" width="27" height="34">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

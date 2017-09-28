@@ -1,0 +1,72 @@
+.market {
+  background-color: $dark-blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.market__nav {
+  background-color: $dark-blue;
+}
+
+.market__link-market {
+  display: block;
+  width: 275px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 30px;
+  padding: 18px 0 19px 0;
+  margin: 0 auto;
+}
+
+.market__list {
+  padding: 0;
+  list-style: none;
+}
+
+.market__item {
+  display: inline-block;
+  text-decoration: none;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.market__link--apple {
+  display: block;
+  width: 47px;
+  height: 57px;
+  background-image: url("../img/logo-apple.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.market__link--android {
+  display: block;
+  width: 47px;
+  height: 57px;
+  background-image: url("../img/logo-android.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.market__link--windowsphone {
+  display: block;
+  width: 47px;
+  height: 57px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.market__info {
+  font-weight: 300;
+  color: $white;
+  margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+.features__title {
+  font-size: 24px;
+  font-weight: 300;
+  color: $grey;
+  text-align: center;
+}
+
+.features__container {
+  background-color: $light-grey;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-item__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features-item__text {
+  text-align: center;
+  color: $grey;
+}

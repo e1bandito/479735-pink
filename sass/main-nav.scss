@@ -1,0 +1,38 @@
+.main-nav__toggle {
+  width: 24px;
+  height: 23px;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $dark-blue;
+  border: none;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main-nav__list {
+
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  display: block;
+  width: 320px;
+  height: 63px;
+  background-color: $dark-blue;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.main-nav__link {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}

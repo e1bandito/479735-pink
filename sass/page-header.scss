@@ -1,10 +1,19 @@
 .page-header {
-  width: 320px;
   margin: 0 auto;
 }
 
 .page-header__logo {
   display: block;
+  height: 69px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
   background-color: $dark-blue;
-  padding: 22px 0 22px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    background-image: url("../img/logo-pink-blue-mobile.svg"),
+      url("../img/logo-pink-white-mobile.svg");
+  }
 }

@@ -1,8 +1,15 @@
 body {
+  max-width: 320px;
   font-family: "Open sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -14,4 +21,10 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 660px;
+  }
 }

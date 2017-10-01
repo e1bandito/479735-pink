@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__button--1:checked ~ .slider__list .slider__item:first-child {
+  display: block;
+}
+
+.slider__button--2:checked ~ .slider__list .slider__item:nth-child(2) {
+  display: block;
+}
+
+.slider__button--3:checked ~ .slider__list .slider__item:nth-child(3) {
+  display: block;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: -20px;
+  left: 40%;
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  background-color: #bdc1c7;
+  border: 3px solid white;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__button--1:checked ~ .slider__controls label[for="button-1"],
+.slider__button--2:checked ~ .slider__controls label[for="button-2"],
+.slider__button--3:checked ~ .slider__controls label[for="button-3"] {
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}

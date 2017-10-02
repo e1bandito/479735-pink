@@ -1,9 +1,9 @@
 .market {
-  background-color: #3e464f;
+  background-color: $market-bg;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -70px;
-  background-size: auto;
+  background-position: center -65px;
+  // background-size: 700px 462px;
 }
 
 .market__image-wrapper {
@@ -15,7 +15,7 @@
 
 .market__nav {
   width: 275px;
-  background-color: #3e464f;
+  background-color: $market-bg;
   padding: 27px 20px 31px 20px;
 }
 

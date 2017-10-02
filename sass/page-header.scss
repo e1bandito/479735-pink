@@ -1,19 +1,17 @@
 .page-header {
+  min-width: 320px;
   margin: 0 auto;
-}
-
-.page-header__logo {
-  display: block;
-  height: 69px;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 10% 50%;
   background-color: $dark-blue;
 }
 
-@media (min-width: 660px) {
-  .page-header__logo {
-    background-image: url("../img/logo-pink-blue-mobile.svg"),
-      url("../img/logo-pink-white-mobile.svg");
-  }
+// .page-header__opacity {
+//   position: absolute;
+//   background-color: rgba(40, 54, 69, 0.7);
+// }
+
+.page-header__logo {
+  display: block;
+  width: 75px;
+  height: 22px;
+  padding: 21px 0 27px 20px;
 }

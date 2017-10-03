@@ -13,8 +13,7 @@
     <header class="page-header page-header__opacity">
       <h1 class="visually-hidden">Pink</h1>
       <a class="page-header__logo" href="#">
-<!--        <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" alt="Логотип">-->
-         <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+         <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewbox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
           <g>
             <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
             <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -25,7 +24,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню
-          <svg class="main-nav__toggle-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <svg class="main-nav__toggle-image" version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewbox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
             <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
           </svg>
         </button>
@@ -99,11 +98,6 @@
           <input class="slider__button--1 visually-hidden" type="radio" id="button-1" name="toggle" checked>
           <input class="slider__button--2 visually-hidden" type="radio" id="button-2" name="toggle">
           <input class="slider__button--3 visually-hidden" type="radio" id="button-3" name="toggle">
-          <div class="slider__controls">
-            <label for="button-1"></label>
-            <label for="button-2"></label>
-            <label for="button-3"></label>
-          </div>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <h3 class="reviews__title">Николай Петров</h3>
@@ -118,12 +112,20 @@
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
+          <div class="slider__controls">
+            <label for="button-1"></label>
+            <label for="button-2"></label>
+            <label for="button-3"></label>
+          </div>
         </div>
       </section>
 
       <section class="tariff-plan">
         <h2 class="visually-hidden">Тарифный план</h2>
         <div class="tariff-plan__wrapper slider">
+          <input class="slider__button--4 visually-hidden" type="radio" id="button-4" name="tariff-plan-toggle">
+          <input class="slider__button--5 visually-hidden" type="radio" id="button-5" name="tariff-plan-toggle" checked>
+          <input class="slider__button--6 visually-hidden" type="radio" id="button-6" name="tariff-plan-toggle">
           <ul class="tariff-plan__list slider__list">
             <li class="tariff-plan__item slider__ite">
               <div class="tariff-plan__header">
@@ -153,17 +155,17 @@
               <p class="tariff-plan__text tariff-plan__text--on-comment">Комментарии</p>
             </li>
           </ul>
-          <div class="tariff-plan__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <div class="slider__controls slider__controls--tariff-plan">
+            <label for="button-4"></label>
+            <label for="button-5"></label>
+            <label for="button-6"></label>
           </div>
         </div>
       </section>
 
       <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <b class="contacts__subtitle">Звоните:</b>
           <p class="contacts__text">+7 (812) 555-66-66</p>
           <b class="contacts__subtitle">Пишите:</b>
@@ -172,7 +174,9 @@
           <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </div>
       </section>
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A839f67b9e9a3bf9fc99b25b2c0402072b112dfaa39b962e2de64d96c9e5ed119&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor" width="320" height="240" frameborder="0"></iframe>
+      </div>
     </main>
 
   </body>

@@ -18,28 +18,50 @@
   display: block;
 }
 
+.slider__button--4:checked ~ .tariff-plan__list {
+  margin-left: 22px;
+}
+
+.slider__button--5:checked ~ .tariff-plan__list {
+  margin-left: -256px;
+}
+
+.slider__button--6:checked ~ .tariff-plan__list {
+  margin-left: -534px;
+}
+
 .slider__controls {
-  position: absolute;
-  bottom: -19px;
-  left: 125px;
+  text-align: center;
 }
 
 .slider__controls label {
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 5px;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
   background-color: #bdc1c7;
   border: 3px solid $white;
+  // border: none;
   vertical-align: middle;
   border-radius: 50%;
   cursor: pointer;
+
   &:hover {
     background-color: #7e868f;
   }
+
   &:active {
     background-color: #e9ebec;
   }
+}
+
+.slider__controls--tariff-plan {
+  padding-top: 33px;
+  padding-bottom: 43px;
+}
+
+.slider__controls--tariff-plan label {
+  border: 3px solid $light-grey;
 }
 
 .slider__button--1:checked ~ .slider__controls label[for="button-1"],
@@ -47,4 +69,11 @@
 .slider__button--3:checked ~ .slider__controls label[for="button-3"] {
   border: 3px solid $black;
   background-color: $white;
+}
+
+.slider__button--4:checked ~ .slider__controls label[for="button-4"],
+.slider__button--5:checked ~ .slider__controls label[for="button-5"],
+.slider__button--6:checked ~ .slider__controls label[for="button-6"] {
+  border: 3px solid $black;
+  background-color: $light-grey;
 }

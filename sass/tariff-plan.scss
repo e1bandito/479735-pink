@@ -1,6 +1,7 @@
 .tariff-plan__wrapper {
   background-color: $light-grey;
   overflow: hidden;
+
   &::before {
     content: " ";
     position: absolute;
@@ -23,7 +24,7 @@
 
 .tariff-plan__item {
   position: relative;
-  padding-top: 110px;
+  padding-top: 105px;
   margin: 0;
 }
 
@@ -79,7 +80,7 @@
   content: " ";
   width: 75px;
   height: 75px;
-  top: 110px;
+  top: 105px;
   left: -1px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
@@ -90,7 +91,7 @@
   content: " ";
   width: 32px;
   height: 32px;
-  top: 228px;
+  top: 224px;
   right: 19px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -102,7 +103,7 @@
   content: " ";
   width: 32px;
   height: 32px;
-  top: 289px;
+  top: 285px;
   right: 19px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -114,7 +115,7 @@
   content: " ";
   width: 32px;
   height: 32px;
-  top: 345px;
+  top: 340px;
   right: 19px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -126,7 +127,7 @@
   content: " ";
   width: 26px;
   height: 26px;
-  top: 286px;
+  top: 281px;
   right: 20px;
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
@@ -138,7 +139,7 @@
   content: " ";
   width: 26px;
   height: 26px;
-  top: 346px;
+  top: 341px;
   right: 20px;
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;

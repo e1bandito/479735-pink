@@ -34,6 +34,12 @@
   vertical-align: middle;
   border-radius: 50%;
   cursor: pointer;
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 
 .slider__button--1:checked ~ .slider__controls label[for="button-1"],

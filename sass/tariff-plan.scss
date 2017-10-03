@@ -1,0 +1,146 @@
+.tariff-plan__wrapper {
+  background-color: $light-grey;
+  overflow: hidden;
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -20px;
+    right: -500px;
+    width: 1200px;
+    height: 95px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.tariff-plan__list {
+  display: flex;
+  margin: 0;
+  margin-left: -256px;
+  padding: 0;
+  list-style: none;
+}
+
+.tariff-plan__item {
+  position: relative;
+  padding-top: 110px;
+  margin: 0;
+}
+
+.tariff-plan__header {
+  width: 278px;
+  background-color: $dark-blue;
+}
+
+.tariff-plan__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  padding-top: 16px;
+  margin: 0;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.tariff-plan__price {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  margin: 0;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.tariff-plan__text {
+  width: 255px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $dark-blue;
+  text-transform: uppercase;
+  padding: 15px 0 14px 21px;
+  margin: 0;
+  background-color: $white;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.tariff-plan__header--hit::before {
+  position: absolute;
+  content: " ";
+  width: 75px;
+  height: 75px;
+  top: 110px;
+  left: -1px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.tariff-plan__text--on-filter::after {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  top: 228px;
+  right: 19px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff-plan__text--on-smile::after {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  top: 289px;
+  right: 19px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff-plan__text--on-comment::after {
+  position: absolute;
+  content: " ";
+  width: 32px;
+  height: 32px;
+  top: 345px;
+  right: 19px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff-plan__text--off-smile::after {
+  position: absolute;
+  content: " ";
+  width: 26px;
+  height: 26px;
+  top: 286px;
+  right: 20px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tariff-plan__text--off-comment::after {
+  position: absolute;
+  content: " ";
+  width: 26px;
+  height: 26px;
+  top: 346px;
+  right: 20px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

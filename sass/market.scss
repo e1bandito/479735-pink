@@ -3,7 +3,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
-  // background-size: 700px 462px;
+  background-size: 700px 462px;
 }
 
 .market__image-wrapper {
@@ -32,6 +32,13 @@
   border-radius: 30px;
   padding: 14px 0 17px 0;
   margin: 0 auto;
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+  &:active {
+    color: transparentize($pink,.3);
+  }
 }
 
 .market__list {

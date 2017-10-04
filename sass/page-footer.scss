@@ -1,0 +1,121 @@
+.page-footer__social {
+  margin-top: 41px;
+  padding-bottom: 36px;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 148px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  &:hover path {
+    fill: $pink;
+  }
+
+  &:active g path {
+    fill: $dark-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 176px;
+  height: 52px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-footer__item {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+
+.page-footer__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  border: 3px solid $border-color;
+  border-radius: 50%;
+
+  &:hover {
+    border: 3px solid $black;
+  }
+
+  &:active {
+    border: 3px solid #edeef0;
+  }
+}
+
+.page-footer__link svg,
+.page-footer__copyright-link svg {
+  pointer-events: none;
+}
+
+.page-footer__link--twitter svg {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  fill: $pink;
+}
+
+.page-footer__link--twitter:active path {
+  opacity: 0.3;
+}
+
+.page-footer__link--facebook svg {
+  position: absolute;
+  top: 15px;
+  left: 21px;
+  fill: $pink;
+}
+
+.page-footer__link--facebook:active path {
+  opacity: 0.3;
+}
+
+.page-footer__link--youtube svg {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  fill: $pink;
+}
+
+.page-footer__link--youtube:active path {
+  opacity: 0.3;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 130px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.page-footer__text {
+  color: $dark-blue;
+}
+
+.page-footer__copyright-link {
+  fill: $pink;
+
+  &:hover path {
+    fill: $black;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}

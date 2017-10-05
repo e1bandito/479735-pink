@@ -1,0 +1,40 @@
+.photo-load {
+  background-color: $light-grey;
+}
+
+.photo-load__form-wrapper {
+  padding: 20px;
+}
+
+.photo-load__tools {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.photo-load__tools-item {
+  position: relative;
+}
+
+.photo-load__radio-label {
+  font-size: 0px;
+}
+
+.photo-load__radio-label--cadr {
+//  position: absolute;
+//  top: -4px;
+//  left: 0;
+//  width: 55px;
+//  height: 55px;
+//  background-image: url("../img/icon-editor-crop.svg");
+//  background-repeat: no-repeat;
+//  background-position: center 9px;
+
+  &:hover svg {
+    fill: #8b939b;
+  }
+}
+
+.photo-load__label--cadr  input[type="radio"]:checked + .photo-load__checkbox-radioindikator--cadr path {
+  fill: red;
+}

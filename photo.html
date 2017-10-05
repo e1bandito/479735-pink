@@ -124,32 +124,29 @@
           <ul class="photo-load__tools">
             <li class="photo-load__tools-item">
               <label for="cadr" class="photo-load__radio-label photo-load__radio-label--cadr">Кадрирование
-              <input class="photo-load__radio" type="radio" name="filter" id="cadr" value="cadr" checked>
-              <span class="photo-load__checkbox-radioindikator--cadr">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve" fill="#b4b8be">
-                  <path fill="none" d="M0,0h48v48H0V0z"/>
-                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-              </span>
+                <input class="photo-load__radio visually-hidden" type="radio" name="filter" id="cadr" value="cadr" checked>
+                <span class="photo-load__checkbox-radioindikator--cadr"></span>
               </label>
             </li>
             <li class="photo-load__tools-item">
-              <label for="fill" class="photo-load__radio-label">Заливка</label>
-              <input class="photo-load__radio" type="radio" name="filter" id="fill" value="fill" checked>
-              <span class="photo-load__checkbox-radioindikator"></span>
+              <label for="fill" class="photo-load__radio-label photo-load__radio-label--fill">Заливка
+                <input class="photo-load__radio visually-hidden" type="radio" name="filter" id="fill" value="fill" checked>
+                <span class="photo-load__checkbox-radioindikator--fill"></span>
+              </label>
             </li>
             <li class="photo-load__tools-item">
-              <label for="contrast" class="photo-load__radio-label">Контраст</label>
-              <input class="photo-load__radio" type="radio" name="filter" id="contrast" value="contrast">
-              <span class="photo-load__checkbox-radioindikator"></span>
+              <label for="contrast" class="photo-load__radio-label photo-load__radio-label--contrast">Контраст
+                <input class="photo-load__radio visually-hidden" type="radio" name="filter" id="contrast" value="contrast">
+                <span class="photo-load__checkbox-radioindikator--contrast"></span>
+              </label>
             </li>
-<!--
-            <input class="photo-load__radio" type="radio" name="filter" value="fill">
-            <input class="photo-load__radio" type="radio" name="filter" value="contrast">
--->
           </ul>
+          <div class="photo-load__range">
+            <div class="photo-load__toggle"></div>
+          </div>
           <div class="photo-load__buttons">
-            <button class="button photo-load__button photo-load__button--submit" type="submit">Запостить</button>
-            <button class="button photo-load__button photo-load__button--reset" type="reset">Отмена</button>
+            <button class="photo-load__button--submit" type="submit">Запостить</button>
+            <button class="photo-load__button--reset" type="reset">Отмена</button>
           </div>
         </div>
       </form>

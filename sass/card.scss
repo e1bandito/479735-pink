@@ -33,7 +33,7 @@
   background-color: $light-grey;
   color: $dark-blue;
   margin: 0 20px 0 20px;
-  padding: 21px 18px 0px;
+  padding: 21px 18px 0;
 }
 
 .card__panorama-user-name {
@@ -73,7 +73,7 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 13px;
+    width: 14px;
     height: 12px;
     top: 15px;
     left: 0;
@@ -91,7 +91,7 @@
 }
 
 .page-main article:nth-of-type(3),
-.page-main article:nth-of-type(5){
+.page-main article:nth-of-type(5) {
   margin-bottom: 21px;
 }
 
@@ -138,10 +138,10 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 13px;
+    width: 14px;
     height: 12px;
     top: 15px;
-    left: 0px;
+    left: 0;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
   }

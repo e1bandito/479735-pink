@@ -93,3 +93,13 @@
   border: 3px solid $black;
   background-color: $light-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__button--5:checked ~ .tariff-plan__list {
+    margin-left: 22px;
+  }
+
+  .slider__controls--tariff-plan {
+    display: none;
+  }
+}

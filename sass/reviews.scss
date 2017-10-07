@@ -30,6 +30,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    padding-bottom: 0;
+  }
+
   .reviews__item-wrapper {
     display: flex;
     flex-direction: column;

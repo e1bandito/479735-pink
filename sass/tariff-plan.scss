@@ -6,7 +6,7 @@
     content: " ";
     position: absolute;
     top: -20px;
-    right: -500px;
+    right: -450px;
     width: 1200px;
     height: 95px;
     background-image: url("../img/bg-triangle-white.svg");
@@ -22,10 +22,13 @@
   list-style: none;
 }
 
+.tariff-plan__list li:first-child {
+  display: none;
+}
+
 .tariff-plan__item {
   position: relative;
-  padding-top: 105px;
-  margin: 0;
+  margin-top: 105px;
 }
 
 .tariff-plan__header {
@@ -48,7 +51,7 @@
 
 .tariff-plan__price {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 30px;
   color: $white;
   text-transform: uppercase;
@@ -80,7 +83,7 @@
   content: " ";
   width: 75px;
   height: 75px;
-  top: 105px;
+  top: 0;
   left: -1px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
@@ -91,7 +94,7 @@
   content: " ";
   width: 32px;
   height: 32px;
-  top: 224px;
+  top: 119px;
   right: 19px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -103,7 +106,7 @@
   content: " ";
   width: 32px;
   height: 32px;
-  top: 285px;
+  top: 180px;
   right: 19px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -115,7 +118,7 @@
   content: " ";
   width: 32px;
   height: 32px;
-  top: 340px;
+  top: 235px;
   right: 19px;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
@@ -127,7 +130,7 @@
   content: " ";
   width: 26px;
   height: 26px;
-  top: 281px;
+  top: 176px;
   right: 20px;
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
@@ -139,9 +142,94 @@
   content: " ";
   width: 26px;
   height: 26px;
-  top: 341px;
+  top: 236px;
   right: 20px;
   background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .tariff-plan__list li:first-child {
+    display: block;
+  }
+
+  .tariff-plan__list {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 70px;
+    margin: 0 auto;
+  }
+
+  .tariff-plan__title {
+    font-size: 16px;
+    padding-top: 11px;
+  }
+
+  .tariff-plan__price {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    padding-bottom: 12px;
+  }
+
+  .tariff-plan__header {
+    width: 155px;
+  }
+
+  .tariff-plan__text {
+    width: 152px;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 7px 0 8px 0;
+  }
+
+  .tariff-plan__text--visible {
+    width: 137px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-indent: 0;
+    white-space: normal;
+    overflow: visible;
+    padding-left: 15px;
+    text-transform: none;
+  }
+
+  .tariff-plan__text--on-filter::after {
+    top: 90px;
+    right: 61px;
+  }
+
+  .tariff-plan__text--on-smile::after {
+    top: 136px;
+    right: 61px;
+  }
+
+  .tariff-plan__text--on-comment::after {
+    top: 182px;
+    right: 61px;
+  }
+
+  .tariff-plan__text--off-smile::after {
+    top: 134px;
+    right: 64px;
+  }
+
+  .tariff-plan__text--off-comment::after {
+    top: 181px;
+    right: 65px;
+  }
+
+  .tariff-plan__header--hit::before {
+    position: absolute;
+    content: " ";
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: 1px;
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+  }
 }

@@ -92,7 +92,6 @@
 }
 
 .market__info {
-  width: 250px;
   text-align: center;
   font-weight: 300;
   color: $white;
@@ -111,7 +110,8 @@
   .market__nav {
     position: relative;
     background-color: transparent;
-    padding: 92px 0 110px 20px;
+    width: 300px;
+    padding: 92px 20px 111px;
     z-index: 1;
   }
 
@@ -121,7 +121,7 @@
     font-weight: 300;
     line-height: 48px;
     color: $white;
-    padding: 0 43px 31px;
+    padding: 2px 32px 28px;
     margin: 0;
     text-align: center;
   }
@@ -135,7 +135,7 @@
   }
 
   .market__info {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 24px;
   }

@@ -7,10 +7,6 @@
   padding-top: 20px;
 }
 
-.features__title:nth-child(2) {
-  padding-top: 10px;
-}
-
 .features__container {
   position: relative;
   background-color: $light-grey;
@@ -56,4 +52,38 @@
   padding-top: 39px;
   height: 278px;
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .features h2:nth-child(2) {
+    padding: 0 130px 28px;
+  }
+
+  .features__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features__list {
+    width: 310px;
+    order: 2;
+  }
+
+  .features__list li:nth-child(3) {
+    padding-top: 5px;
+    padding-bottom: 40px;
+  }
+
+  .features-item__title,
+  .features-item__text {
+    text-align: left;
+  }
 }

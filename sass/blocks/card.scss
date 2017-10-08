@@ -9,24 +9,23 @@
   display: block;
   position: relative;
   margin-bottom: -10px;
+}
 
-  &::before {
-    display: block;
-    position: absolute;
-    content: "Панорама дня";
-    width: 140px;
-    height: auto;
-    top: 0;
-    right: 21px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white;
-    padding: 6px 0;
-    background-color: $pink;
-  }
+.card__panorama-daily-image {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: auto;
+  top: -12px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  padding: 6px 0;
+  background-color: $pink;
 }
 
 .card__panorama-info {

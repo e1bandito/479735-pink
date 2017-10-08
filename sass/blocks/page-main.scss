@@ -12,6 +12,10 @@
   padding: 30px 20px 21px;
 }
 
+.page-main__text {
+  display: none;
+}
+
 .page-main__intro--foto {
   padding: 31px 35px 35px;
 }
@@ -19,4 +23,17 @@
 .page-main__intro--form {
   padding: 21px 35px 35px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__intro {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 74px 50px 21px;
+  }
+
+  .page-main__text {
+    display: inline;
+  }
 }

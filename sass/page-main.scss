@@ -1,0 +1,22 @@
+// .page-main {
+//   min-width: 320px;
+//   margin: 0 auto;
+// }
+
+.page-main__intro {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: $dark-blue;
+  padding: 30px 20px 21px;
+}
+
+.page-main__intro--foto {
+  padding: 31px 35px 35px;
+}
+
+.page-main__intro--form {
+  padding: 21px 35px 35px;
+  margin: 0;
+}

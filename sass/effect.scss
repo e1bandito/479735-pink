@@ -1,0 +1,44 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    padding: 59px 36px 52px 21px;
+  }
+
+  .effect__info {
+    width: 296px;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    padding-top: 38px;
+  }
+
+  .effect__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $dark-blue;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .effect__link {
+    color: $pink;
+
+    &:visited {
+      color: $pink;
+    }
+  }
+}

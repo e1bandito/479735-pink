@@ -1,0 +1,148 @@
+.card__panorama {
+  position: relative;
+  display: block;
+  width: 320px;
+  padding-bottom: 19px;
+}
+
+.card__panorama-image {
+  display: block;
+  position: relative;
+  margin-bottom: -10px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "Панорама дня";
+    width: 140px;
+    height: auto;
+    top: 0;
+    right: 21px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    padding: 6px 0;
+    background-color: $pink;
+  }
+}
+
+.card__panorama-info {
+  background-color: $light-grey;
+  color: $dark-blue;
+  margin: 0 20px 0 20px;
+  padding: 21px 18px 0;
+}
+
+.card__panorama-user-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $dark-blue;
+  padding: 0;
+  margin: 0;
+}
+
+.card__panorama-time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.card__panorama-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.card__panorama-like {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+  padding: 10px 0 20px 32px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 14px;
+    height: 12px;
+    top: 15px;
+    left: 0;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.card {
+  width: 282px;
+  height: auto;
+  background-color: $light-grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.page-main article:nth-of-type(3),
+.page-main article:nth-of-type(5) {
+  margin-bottom: 21px;
+}
+
+.card__info {
+  background-color: $light-grey;
+  color: $dark-blue;
+  padding: 11px 18px 20px 18px;
+}
+
+.card__user-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $dark-blue;
+  padding: 0;
+  margin: 0;
+}
+
+.card__time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.card__like {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+  padding: 9px 0 0 32px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 14px;
+    height: 12px;
+    top: 15px;
+    left: 0;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}

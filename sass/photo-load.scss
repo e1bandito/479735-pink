@@ -1,0 +1,209 @@
+.photo-load {
+  background-color: $light-grey;
+  margin-top: 9px;
+}
+
+.photo-load__picture {
+  padding: 19px;
+}
+
+.photo-load__tools {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  padding: 0;
+  padding-top: 5px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.photo-load__tools-item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.photo-load__radio-label {
+  font-size: 0;
+}
+
+.photo-load__radio-label--cadr input[type="radio"] + .photo-load__checkbox-radioindikator--cadr {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-crop.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--cadr:hover input[type="radio"] + .photo-load__checkbox-radioindikator--cadr {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-crop-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--cadr input[type="radio"]:checked + .photo-load__checkbox-radioindikator--cadr {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-crop-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--fill input[type="radio"] + .photo-load__checkbox-radioindikator--fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--fill:hover input[type="radio"] + .photo-load__checkbox-radioindikator--fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-fill-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--fill input[type="radio"]:checked + .photo-load__checkbox-radioindikator--fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-fill-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--contrast input[type="radio"] + .photo-load__checkbox-radioindikator--contrast {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-contrast.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--contrast:hover input[type="radio"] + .photo-load__checkbox-radioindikator--contrast {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-contrast-hover.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__radio-label--contrast input[type="radio"]:checked + .photo-load__checkbox-radioindikator--contrast {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon-editor-contrast-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.photo-load__range {
+  position: relative;
+  width: 240px;
+  border: 1px solid $black;
+  margin: 32px auto 33px;
+}
+
+.photo-load__toggle {
+  position: absolute;
+  top: -7px;
+  left: 80%;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $pink;
+  }
+}
+
+.photo-load__buttons {
+  border-top: 1px solid #dddfe0;
+  padding-bottom: 41px;
+}
+
+.photo-load__button--submit {
+  display: block;
+  width: 280px;
+  height: 55px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $pink;
+  background-color: $light-grey;
+  border: 3px solid $pink;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin: 39px auto 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $pink;
+    color: $white;
+  }
+
+  &:active {
+    color: #e06689;
+  }
+}
+
+.photo-load__button--reset {
+  display: block;
+  width: 280px;
+  height: 55px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #dddee0;
+  background-color: $light-grey;
+  border: 3px solid #dddee0;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #b4b8be;
+    color: #b4b8be;
+  }
+
+  &:active {
+    border-color: #b4b8be;
+    background-color: #b4b8be;
+    color: #cbcdd2;
+  }
+}

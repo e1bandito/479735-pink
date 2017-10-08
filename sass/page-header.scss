@@ -1,0 +1,35 @@
+.page-header {
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: $dark-blue;
+}
+
+// .page-header__opacity {
+//   position: absolute;
+//   background-color: rgba(40, 54, 69, 0.7);
+// }
+
+.page-header__logo {
+  display: block;
+  width: 75px;
+  height: 22px;
+  padding: 21px 0 27px 20px;
+
+  &:hover path {
+    fill: $pink;
+  }
+
+  &:active path {
+    fill: transparentize($pink, 0.3);
+  }
+}
+
+.page-header__logo svg {
+  pointer-events: none;
+}
+
+@media (min-width: 660px) {
+  .page-header__logo {
+    padding: 43px 0 45px 93px;
+  }
+}

@@ -1,0 +1,152 @@
+.market {
+  background-color: $market-bg;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -65px;
+  background-size: 700px 462px;
+}
+
+.market__image-wrapper {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: 395px;
+}
+
+.market__title {
+  display: none;
+}
+
+.market__nav {
+  width: 275px;
+  background-color: $market-bg;
+  padding: 27px 20px 31px 20px;
+}
+
+.market__link-market {
+  display: block;
+  width: 275px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 30px;
+  padding: 14px 0 17px 0;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: transparentize($pink, 0.3);
+  }
+}
+
+.market__list {
+  display: flex;
+  width: 250px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.market__item {
+  display: inline-block;
+  width: 80px;
+  height: 59px;
+  padding-top: 30px;
+  text-decoration: none;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.market__link--apple {
+  display: block;
+  height: 67px;
+  background-image: url("../img/logo-apple.svg");
+  background-position: 25px 2px;
+  background-repeat: no-repeat;
+}
+
+.market__link--android {
+  display: block;
+  height: 54px;
+  background-image: url("../img/logo-android.svg");
+  background-position: 26px 10px;
+  background-repeat: no-repeat;
+  padding-top: 5px;
+}
+
+.market__link--windowsphone {
+  display: block;
+  height: 60px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: 25px 15px;
+  background-repeat: no-repeat;
+}
+
+.market__info {
+  text-align: center;
+  font-weight: 300;
+  color: $white;
+  margin: 0 auto;
+  padding-top: 22px;
+}
+
+@media (min-width: 660px) {
+  .market {
+    position: relative;
+    background-color: transparent;
+    background-position: center center;
+    background-size: auto 100%;
+  }
+
+  .market__nav {
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+    padding: 92px 20px 111px;
+    z-index: 1;
+  }
+
+  .market__title {
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    color: $white;
+    padding: 2px 32px 28px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .market__link-market {
+    width: 293px;
+  }
+
+  .market__list {
+    padding: 13px 23px;
+  }
+
+  .market__info {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  .market__image-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 460px;
+    height: 545px;
+    background-size: 100%;
+    padding: 0;
+  }
+}

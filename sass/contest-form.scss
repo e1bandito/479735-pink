@@ -1,0 +1,249 @@
+//.contest-form {
+//  padding: 0 20px;
+//  margin: 0 auto;
+//}
+
+.contest-form__full-name {
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.contest-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+  padding-left: 22px;
+}
+
+.contest-form__input {
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  border: 2px solid $border-color;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 0 20px;
+  margin-top: 5px;
+  margin-bottom: 17px;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    border: 2px solid $border-color;
+    outline: 2px solid $pink;
+  }
+}
+
+
+.contest-form__achievements {
+  position: relative;
+  background-color: $light-grey;
+  padding: 38px 20px 0;
+  margin: 0 auto;
+}
+
+.contest-form__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink;
+  padding: 0 25px 43px;
+  margin: 0;
+}
+
+.contest-form__achievements label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $dark-blue;
+  padding-left: 70px;
+  margin-bottom: 52px;
+  cursor: pointer;
+}
+
+.contest-form__checkbox-indikator {
+  position: absolute;
+  display: block;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  border: 2px solid $border-color;
+  background-color: $white;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid $pink;
+  }
+}
+
+.contest-form__achievements label:last-child {
+  padding-bottom: 46px;
+  margin-bottom: 0;
+}
+
+.contest-form__checkbox-label input[type="checkbox"]:checked + .contest-form__checkbox-indikator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contest-form__checkbox-label input[type="checkbox"]:focus + .contest-form__checkbox-indikator,
+.contest-form__checkbox-label input[type="radio"]:focus + .contest-form__checkbox-radioindikator {
+  // outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.contest-form__contacts {
+  padding: 33px 20px 26px 20px;
+  margin: 0 auto;
+}
+
+.contest-form__app-type {
+  padding: 37px 20px 30px 20px;
+  margin: 0 auto;
+  background-color: $light-grey;
+}
+
+.contest-form__checkbox-radioindikator {
+  position: absolute;
+  display: block;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid $border-color;
+  background-color: $white;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid $pink;
+  }
+}
+
+.contest-form__checkbox-label input[type="radio"]:checked + .contest-form__checkbox-radioindikator {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/radio-on.png");
+  background-repeat: no-repeat;
+  background-position: center 9px;
+}
+
+.contest-form__app-type h3 {
+  padding-bottom: 39px;
+}
+
+.contest-form__app-type label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $dark-blue;
+  padding-left: 70px;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.contest-form__app-type label:last-child {
+  margin-bottom: 0;
+  padding-bottom: 18px;
+}
+
+.contest-form__impression {
+  padding: 37px 20px 41px;
+  margin: 0 auto;
+}
+
+.contest-form__impression h3 {
+  padding-bottom: 16px;
+}
+
+.contest-form__textarea {
+  width: 279px;
+  height: 201px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 15px 19px;
+  border: 2px solid $border-color;
+  box-sizing: border-box;
+  resize: none;
+
+  &:hover {
+    border: 2px solid $black;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $pink;
+  }
+}
+
+.contest-form__button {
+  display: block;
+  width: 280px;
+  height: 62px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  background-color: $green-btn;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green-btn-hover;
+  }
+
+  &:active {
+    background-color: $green-btn-active;
+    color: $green-btn-active-text;
+  }
+}
+
+.contest-form__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 22px;
+}
+
+.contest-form__text--red {
+  color: $pink;
+}

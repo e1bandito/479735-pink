@@ -1,0 +1,105 @@
+.slider {
+  position: relative;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__button--1:checked ~ .slider__list .slider__item:first-child {
+  display: block;
+}
+
+.slider__button--2:checked ~ .slider__list .slider__item:nth-child(2) {
+  display: block;
+}
+
+.slider__button--3:checked ~ .slider__list .slider__item:nth-child(3) {
+  display: block;
+}
+
+.slider__button--4:checked ~ .tariff-plan__list {
+  margin-left: 22px;
+}
+
+.slider__button--5:checked ~ .tariff-plan__list {
+  margin-left: -256px;
+}
+
+.slider__button--6:checked ~ .tariff-plan__list {
+  margin-left: -534px;
+}
+
+.slider__controls {
+  text-align: center;
+}
+
+.slider__controls label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-color: #bdc1c7;
+  border: 3px solid $white;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slider__controls--tariff-plan {
+  padding-top: 33px;
+  padding-bottom: 43px;
+  text-align: center;
+}
+
+.slider__controls--tariff-plan label {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 4px;
+  background-color: #bdc1c7;
+  border: 3px solid $light-grey;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.slider__button--1:checked ~ .slider__controls label[for="button-1"],
+.slider__button--2:checked ~ .slider__controls label[for="button-2"],
+.slider__button--3:checked ~ .slider__controls label[for="button-3"] {
+  border: 3px solid $black;
+  background-color: $white;
+}
+
+.slider__button--4:checked ~ .slider__controls--tariff-plan label[for="button-4"],
+.slider__button--5:checked ~ .slider__controls--tariff-plan label[for="button-5"],
+.slider__button--6:checked ~ .slider__controls--tariff-plan label[for="button-6"] {
+  border: 3px solid $black;
+  background-color: $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__button--5:checked ~ .tariff-plan__list {
+    margin-left: 22px;
+  }
+
+  .slider__controls--tariff-plan {
+    display: none;
+  }
+}

@@ -207,3 +207,50 @@
     color: #cbcdd2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .photo-load__tools {
+    display: none;
+  }
+
+  .photo-load__form {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 0 0 0;
+  }
+
+  .photo-load__range-wrapper {
+    width: 275px;
+    height: 40px;
+    box-sizing: border-box;
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 2px;
+    flex-grow: 1;
+  }
+
+  .photo-load__form-wrapper {
+    width: 340px;
+    padding: 7px 0 15px 0;
+  }
+
+  .photo-load__buttons {
+    padding-top: 24px;
+    // padding-right: 30px;
+    border-top: none;
+  }
+
+  .photo-load__button--submit {
+    width: 260px;
+    margin-bottom: 25px;
+  }
+
+  .photo-load__button--reset {
+    width: 260px;
+  }
+
+  .photo-load__range--cadr,
+  .photo-load__range--fill,
+  .photo-load__range--contrast {
+    width: 198px;
+  }
+}

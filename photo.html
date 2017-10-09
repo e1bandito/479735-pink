@@ -143,8 +143,11 @@
     <section class="photo-load">
       <h2 class="visually-hidden">Загрузка фотографии</h2>
       <form class="photo-load__form" action="https://echo.htmlacademy.ru" method="post">
+        <picture>
+            <source media="(min-width: 660px)" srcset="http://placehold.it/300x400">
+            <img class="photo-load__picture" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
+        </picture>
         <div class="photo-load__form-wrapper">
-          <img class="photo-load__picture" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
           <ul class="photo-load__tools">
             <li class="photo-load__tools-item">
               <label for="cadr" class="photo-load__radio-label photo-load__radio-label--cadr">Кадрирование
@@ -165,8 +168,20 @@
               </label>
             </li>
           </ul>
-          <div class="photo-load__range">
-            <div class="photo-load__toggle"></div>
+          <div class="photo-load__range-wrapper">
+            <div class="photo-load__range photo-load__range--cadr">
+              <div class="photo-load__toggle photo-load__toggle--cadr"></div>
+            </div>
+          </div>
+          <div class="photo-load__range-wrapper">
+            <div class="photo-load__range photo-load__range--fill">
+              <div class="photo-load__toggle photo-load__toggle--fill"></div>
+            </div>
+          </div>
+          <div class="photo-load__range-wrapper">
+            <div class="photo-load__range photo-load__range--contrast">
+              <div class="photo-load__toggle photo-load__toggle--contrast"></div>
+            </div>
           </div>
           <div class="photo-load__buttons">
             <button class="photo-load__button--submit" type="submit">Запостить</button>

@@ -350,35 +350,37 @@
     position: relative;
     width: 500px;
     height: 62px;
+    padding-right: 80px;
     margin-bottom: 10px;
     order: 1;
   }
 
   .contest-form__phone-icon {
     position: absolute;
-    content: " ";
     top: 48px;
     right: 62px;
     width: 58px;
     height: 58px;
     background-color: $border-color;
+    z-index: 1;
   }
 
   .contest-form__contacts input:nth-of-type(2) {
     width: 500px;
     height: 62px;
+    padding-right: 80px;
     margin-bottom: 10px;
     order: 3;
   }
 
   .contest-form__adress-icon {
     position: absolute;
-    content: " ";
     top: 179px;
     right: 62px;
     width: 58px;
     height: 58px;
     background-color: $border-color;
+    z-index: 1;
   }
 
   .contest-form__app-type {

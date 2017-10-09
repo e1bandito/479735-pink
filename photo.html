@@ -47,13 +47,16 @@
 
   <main class="page-main">
     <section class="intro">
-      <h1 class="intro__title">Фотографии пользователей</h1>
+      <h1 class="intro__title intro__title--photo">Фотографии пользователей</h1>
     </section>
     <p class="page-main__intro page-main__intro--foto">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <article class="card__panorama">
       <h2 class="visually-hidden">Фотография пользователя</h2>
       <div class="card__panorama-image">
-        <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/660x509">
+          <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
         <p class="card__panorama-daily-image">Панорама дня</p>
       </div>
       <div class="card__panorama-info">
@@ -62,60 +65,80 @@
         <p class="card__panorama-like">Нравится: 215</p>
       </div>
     </article>
-    <article class="card">
-      <h2 class="visually-hidden">Фотография пользователя</h2>
-      <img class="card__image" src="img/photo-car-mobile@1x.jpg" alt="Панорама дня">
-      <div class="card__info">
-        <p class="card__user-name">Левон <span class="card__time">(5 часов назад)</span></p>
-        <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <p class="card__like">Нравится: 356</p>
-      </div>
-    </article>
-    <article class="card">
-      <h2 class="visually-hidden">Фотография пользователя</h2>
-      <img class="card__image" src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня">
-      <div class="card__info">
-        <p class="card__user-name">Антон <span class="card__time">(12 часов назад)</span></p>
-        <p class="card__text">Соседи будут рады!</p>
-        <p class="card__like">Нравится: 666</p>
-      </div>
-    </article>
-    <article class="card">
-      <h2 class="visually-hidden">Фотография пользователя</h2>
-      <img class="card__image" src="img/photo-window-mobile@1x.jpg" alt="Панорама дня">
-      <div class="card__info">
-        <p class="card__user-name">Борис <span class="card__time">(20 часов назад)</span></p>
-        <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <p class="card__like">Нравится: 215</p>
-      </div>
-    </article>
-    <article class="card">
-      <h2 class="visually-hidden">Фотография пользователя</h2>
-      <img class="card__image" src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня">
-      <div class="card__info">
-        <p class="card__user-name">Сергей <span class="card__time">(25 часов назад)</span></p>
-        <p class="card__text">Самая кубанская в мире!</p>
-        <p class="card__like">Нравится: 4</p>
-      </div>
-    </article>
-    <article class="card">
-      <h2 class="visually-hidden">Фотография пользователя</h2>
-      <img class="card__image" src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня">
-      <div class="card__info">
-        <p class="card__user-name">Максим <span class="card__time">(40 часов назад)</span></p>
-        <p class="card__text">Где снег-то?</p>
-        <p class="card__like">Нравится: 150</p>
-      </div>
-    </article>
-    <article class="card">
-      <h2 class="visually-hidden">Фотография пользователя</h2>
-      <img class="card__image" src="img/photo-wing-mobile@1x.jpg" alt="Панорама дня">
-      <div class="card__info">
-        <p class="card__user-name">Надежда <span class="card__time">(45 часов назад)</span></p>
-        <p class="card__text">Всем GM и взаимные лайки!</p>
-        <p class="card__like">Нравится: 2560</p>
-      </div>
-    </article>
+    <div class="card__wrapper">
+      <article class="card">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+          <img class="card__image" src="img/photo-car-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
+        <div class="card__info">
+          <p class="card__user-name">Левон <span class="card__time">(5 часов назад)</span></p>
+          <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="card__like">Нравится: 356</p>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+          <img class="card__image" src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
+        <div class="card__info">
+          <p class="card__user-name">Антон <span class="card__time">(12 часов назад)</span></p>
+          <p class="card__text">Соседи будут рады!</p>
+          <p class="card__like">Нравится: 666</p>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+          <img class="card__image" src="img/photo-window-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
+        <div class="card__info">
+          <p class="card__user-name">Борис <span class="card__time">(20 часов назад)</span></p>
+          <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="card__like">Нравится: 215</p>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+          <img class="card__image" src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
+        <div class="card__info">
+          <p class="card__user-name">Сергей <span class="card__time">(25 часов назад)</span></p>
+          <p class="card__text">Самая кубанская в мире!</p>
+          <p class="card__like">Нравится: 4</p>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+          <img class="card__image" src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
+        <div class="card__info">
+          <p class="card__user-name">Максим <span class="card__time">(40 часов назад)</span></p>
+          <p class="card__text">Где снег-то?</p>
+          <p class="card__like">Нравится: 150</p>
+        </div>
+      </article>
+      <article class="card">
+        <h2 class="visually-hidden">Фотография пользователя</h2>
+        <picture>
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
+          <img class="card__image" src="img/photo-wing-mobile@1x.jpg" alt="Панорама дня">
+        </picture>
+        <div class="card__info">
+          <p class="card__user-name">Надежда <span class="card__time">(45 часов назад)</span></p>
+          <p class="card__text">Всем GM и взаимные лайки!</p>
+          <p class="card__like">Нравится: 2560</p>
+        </div>
+      </article>
+    </div>
     <p class="page-main__intro page-main__intro--form">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
     <section class="photo-load">
       <h2 class="visually-hidden">Загрузка фотографии</h2>

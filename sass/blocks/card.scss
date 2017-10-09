@@ -1,13 +1,11 @@
 .card__panorama {
   position: relative;
   display: block;
-  width: 320px;
+  min-width: 320px;
   padding-bottom: 19px;
 }
 
 .card__panorama-image {
-  display: block;
-  position: relative;
   margin-bottom: -10px;
 }
 
@@ -143,5 +141,73 @@
     left: 0;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .card__panorama-daily-image {
+    top: 45px;
+  }
+
+  .card__panorama-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 18px 27px 30px;
+  }
+
+  .card__panorama-user-name {
+    order: 1;
+  }
+
+  .card__panorama-text {
+    order: 3;
+    padding-bottom: 25px;
+  }
+
+  .card__panorama-like {
+    padding-right: 33px;
+    order: 2;
+    padding-bottom: 0;
+
+    &::before {
+      left: 140px;
+    }
+  }
+
+  .card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 8px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card__info {
+    width: 300px;
+    height: 148px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 17px 18px 22px 28px;
+  }
+
+  .card__text {
+    flex-grow: 1;
+  }
+
+  .card__like {
+    margin-bottom: auto;
+    padding-left: 0;
+
+    &::before {
+      left: 227px;
+    }
   }
 }

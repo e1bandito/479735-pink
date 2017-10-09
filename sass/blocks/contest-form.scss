@@ -60,6 +60,10 @@
   margin: 0;
 }
 
+.contest-form__contacts h3 {
+  display: none;
+}
+
 .contest-form__achievements label {
   display: block;
   position: relative;
@@ -280,11 +284,101 @@
   }
 
   .contest-form__achievements {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    padding: 56px 60px 27px 58px;
+    margin: 0 20px;
+    flex-grow: 1;
     order: 4;
   }
 
+  .contest-form__achievements h3 {
+    position: absolute;
+    height: 16px;
+    top: -10px;
+    left: 72px;
+    margin: 0 25px;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  .contest-form__achievements label {
+    padding-left: 60px;
+  }
+
+  .contest-form__achievements label:last-child {
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+  }
+
   .contest-form__contacts {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    padding: 41px 60px 27px 58px;
+    margin: 65px 20px;
     order: 3;
+  }
+
+  .contest-form__contacts h3 {
+    display: block;
+    position: absolute;
+    height: 16px;
+    top: -10px;
+    left: 159px;
+    margin: 0 25px;
+    padding-bottom: 0;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  .contest-form__contacts label:nth-of-type(1) {
+    padding-left: 20px;
+    padding-bottom: 24px;
+    order: 2;
+  }
+
+  .contest-form__contacts label:nth-of-type(2) {
+    padding-left: 20px;
+    order: 4;
+  }
+
+  .contest-form__contacts input:nth-of-type(1) {
+    position: relative;
+    width: 500px;
+    height: 62px;
+    margin-bottom: 10px;
+    order: 1;
+  }
+
+  .contest-form__phone-icon {
+    position: absolute;
+    content: " ";
+    top: 48px;
+    right: 62px;
+    width: 58px;
+    height: 58px;
+    background-color: $border-color;
+  }
+
+  .contest-form__contacts input:nth-of-type(2) {
+    width: 500px;
+    height: 62px;
+    margin-bottom: 10px;
+    order: 3;
+  }
+
+  .contest-form__adress-icon {
+    position: absolute;
+    content: " ";
+    top: 179px;
+    right: 62px;
+    width: 58px;
+    height: 58px;
+    background-color: $border-color;
   }
 
   .contest-form__app-type {
@@ -313,10 +407,46 @@
   }
 
   .contest-form__impression {
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    padding: 45px 58px 45px 58px;
+    margin: 66px 20px 0;
+    flex-grow: 1;
     order: 5;
   }
 
+  .contest-form__impression h3 {
+    position: absolute;
+    height: 16px;
+    top: -10px;
+    left: 166px;
+    margin: 0 25px;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  .contest-form__textarea {
+    width: 500px;
+    height: 193px;
+    border: 2px solid $border-color;
+    box-sizing: border-box;
+    resize: none;
+  }
+
   .contest-form__submit {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 48px 20px 52px;
     order: 6;
+  }
+
+  .contest-form__button {
+    width: 300px;
+  }
+
+  .contest-form__text {
+    margin-left: 137px;
   }
 }

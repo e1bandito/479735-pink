@@ -17,6 +17,11 @@
   list-style: none;
 }
 
+.photo-load__controls div:nth-of-type(2),
+.photo-load__controls div:nth-of-type(3){
+  display: none;
+}
+
 .photo-load__tools-item {
   position: relative;
   width: 60px;
@@ -216,26 +221,40 @@
   .photo-load__form {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 37px 0 0 0;
   }
 
   .photo-load__range-wrapper {
     width: 275px;
-    height: 40px;
     box-sizing: border-box;
     border-bottom: 2px solid $border-color;
     padding-bottom: 2px;
+    padding-left: 40px;
     flex-grow: 1;
   }
 
-  .photo-load__form-wrapper {
-    width: 340px;
-    padding: 7px 0 15px 0;
+  .photo-load__controls div:nth-of-type(2),
+  .photo-load__controls div:nth-of-type(3){
+    display: block;
+  }
+
+  .photo-load__tools-wrapper {
+    width: 300px;
+    padding: 7px 20px 15px 0;
+  }
+
+  .photo-load__controls {
+    width: 300px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .photo-load__buttons {
     padding-top: 24px;
-    // padding-right: 30px;
+    padding-left: 10px;
     border-top: none;
   }
 
@@ -251,6 +270,71 @@
   .photo-load__range--cadr,
   .photo-load__range--fill,
   .photo-load__range--contrast {
-    width: 198px;
+    width: 203px;
+  }
+
+  .photo-load__range--cadr {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: -13px;
+      left: -53px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icon-editor-crop-checked.svg");
+      background-size: 24px 24px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .photo-load__range--fill {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: -10px;
+      left: -53px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icon-editor-fill-checked.svg");
+      background-size: 24px 24px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .photo-load__range--contrast {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: -11px;
+      left: -51px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icon-editor-contrast-checked.svg");
+      background-size: 17px 17px;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .photo-load__toggle--cadr {
+    left: 72%;
+  }
+
+  .photo-load__toggle--fill {
+    left: 12%;
+  }
+
+  .photo-load__toggle--contrast {
+    left: 47%;
   }
 }
+
+

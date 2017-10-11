@@ -1,3 +1,8 @@
+.contacts {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__title {
   font-size: 24px;
   font-weight: 300;
@@ -26,18 +31,19 @@
   padding: 0 20px 23px 20px;
 }
 
-.contacts__wrapper b:nth-of-type(2) {
+.contacts__email b {
   padding-bottom: 5px;
 }
 
-.contacts__wrapper b:nth-of-type(3) {
+.contacts__adress b {
   padding-bottom: 8px;
 }
 
 .mymap {
   position: relative;
-  min-width: 320px;
+  max-width: 320px;
   height: 200px;
+  margin: 0 auto;
   overflow: hidden;
 
   &::before {
@@ -54,6 +60,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    min-width: 660px;
+    margin: 0 auto;
+  }
+
   .contacts__title {
     font-size: 40px;
     font-weight: 300;
@@ -84,6 +95,7 @@
   }
 
   .mymap {
+    min-width: 660px;
     height: 370px;
 
     &::before {
@@ -97,5 +109,24 @@
       background-repeat: no-repeat;
       z-index: 1;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .mymap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

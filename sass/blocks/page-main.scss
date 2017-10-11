@@ -1,7 +1,7 @@
-// .page-main {
-//   min-width: 320px;
-//   margin: 0 auto;
-// }
+.page-main {
+  max-width: 320px;
+  margin: 0 auto;
+}
 
 .page-main__intro {
   font-size: 14px;
@@ -26,6 +26,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    min-width: 660px;
+    margin: 0 auto;
+  }
+
   .page-main__intro {
     font-size: 18px;
     font-weight: 400;
@@ -44,5 +49,12 @@
   .page-main__intro--form {
     padding-top: 43px;
     padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    min-width: 1200px;
+    margin: 0 auto;
   }
 }

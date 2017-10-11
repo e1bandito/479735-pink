@@ -1,3 +1,8 @@
+.page-footer {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .page-footer__social {
   margin-top: 41px;
   padding-bottom: 36px;
@@ -21,6 +26,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__logo svg {
+  pointer-events: none;
 }
 
 .page-footer__list {
@@ -127,9 +136,17 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    min-width: 660px;
+    display: block;
+    padding: 29px 0 37px 0;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    min-width: 620px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
-    padding: 29px 20px 37px 20px;
   }
 
   .page-footer__logo {
@@ -145,5 +162,18 @@
   .page-footer__copyright {
     padding: 16px 0 0 0;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    width: 960px;
+    margin: 0 auto;
   }
 }

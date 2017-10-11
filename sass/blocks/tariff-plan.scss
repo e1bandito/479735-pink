@@ -1,3 +1,8 @@
+.tariff-plan {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .tariff-plan__wrapper {
   background-color: $light-grey;
   overflow: hidden;
@@ -150,6 +155,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariff-plan {
+    min-width: 660px;
+    margin: 0 auto;
+  }
+
   .tariff-plan__list li:first-child {
     display: block;
   }
@@ -231,5 +241,18 @@
     left: 1px;
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff-plan {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tariff-paln__wrapper {
+    width: 960px;
+    margin: 0 auto;
   }
 }

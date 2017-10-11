@@ -1,9 +1,11 @@
 .market {
+  max-width: 320px;
   background-color: $market-bg;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
   background-size: 700px 462px;
+  margin: 0 auto;
 }
 
 .market__image-wrapper {
@@ -99,8 +101,10 @@
   padding-top: 22px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .market {
+    min-width: 660px;
+    margin: 0 auto;
     position: relative;
     background-color: transparent;
     background-position: center center;
@@ -148,5 +152,21 @@
     height: 545px;
     background-size: 100%;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .market {
+    max-width: 1200px;
+    height: 853px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("http://placehold.it/1200x853");
+    background-size: 100%;
+  }
+
+  .market__wrapper {
+    min-width: 960px;
+    margin: o auto;
   }
 }

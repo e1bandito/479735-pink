@@ -4,9 +4,14 @@
 
 @media (min-width: $tablet-width) {
   .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
+    max-width: 660px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     padding: 59px 36px 52px 21px;
   }
 
@@ -40,5 +45,26 @@
     &:visited {
       color: $pink;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $light-grey;
+  }
+
+  .effect__wrapper {
+    min-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .effect__info {
+    width: 450px;
   }
 }

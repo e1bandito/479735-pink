@@ -144,8 +144,10 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
+  .card__panorama {
+    margin-bottom: 30px;
+  }
   .card__panorama-daily-image {
     top: 45px;
   }
@@ -155,7 +157,7 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    padding: 18px 27px 30px;
+    padding: 18px 27px 25px;
   }
 
   .card__panorama-user-name {
@@ -164,7 +166,6 @@
 
   .card__panorama-text {
     order: 3;
-    padding-bottom: 25px;
   }
 
   .card__panorama-like {

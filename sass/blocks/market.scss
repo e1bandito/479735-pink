@@ -157,16 +157,35 @@
 
 @media (min-width: $desktop-width) {
   .market {
+    width: 100%;
     max-width: 1200px;
     height: 853px;
-    width: 100%;
     margin: 0 auto;
-    background-image: url("http://placehold.it/1200x853");
-    background-size: 100%;
   }
 
   .market__wrapper {
-    min-width: 960px;
+    width: 960px;
     margin: o auto;
+  }
+
+  .market__nav {
+    padding: 216px 0 0 130px;
+  }
+
+  .market__list {
+    padding: 33px 0;
+  }
+
+  .market__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    padding-bottom: 52px;
+  }
+
+  .market__link-market {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
   }
 }

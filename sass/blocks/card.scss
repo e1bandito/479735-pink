@@ -213,3 +213,16 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card__wrapper {
+    width: 956px;
+    margin: 0 auto;
+  }
+
+  .card__panorama-info {
+    width: 940px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}

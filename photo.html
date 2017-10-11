@@ -9,6 +9,7 @@
 </head>
 <body>
   <header class="page-header page-header__opacity">
+    <div class="page-header__wrapper">
       <h1 class="visually-hidden">Pink</h1>
       <a class="page-header__logo" href="./index.html">
           <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewbox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -43,7 +44,8 @@
           </ul>
         </div>
       </nav>
-    </header>
+    </div>
+  </header>
 
   <main class="page-main">
     <section class="intro">
@@ -54,6 +56,7 @@
       <h2 class="visually-hidden">Фотография пользователя</h2>
       <div class="card__panorama-image">
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/1200x504">
           <source media="(min-width: 660px)" srcset="http://placehold.it/660x509">
           <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -69,6 +72,7 @@
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/300x400">
           <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
           <img class="card__image" src="img/photo-car-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -81,6 +85,7 @@
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/300x400">
           <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
           <img class="card__image" src="img/photo-drumset-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -93,6 +98,7 @@
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/300x400">
           <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
           <img class="card__image" src="img/photo-window-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -105,6 +111,7 @@
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/300x400">
           <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
           <img class="card__image" src="img/photo-fair-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -117,6 +124,7 @@
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/300x400">
           <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
           <img class="card__image" src="img/photo-pov-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -129,6 +137,7 @@
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <picture>
+          <source media="(min-width: 960px)" srcset="http://placehold.it/300x400">
           <source media="(min-width: 660px)" srcset="http://placehold.it/300x300">
           <img class="card__image" src="img/photo-wing-mobile@1x.jpg" alt="Панорама дня">
         </picture>
@@ -141,11 +150,12 @@
     </div>
     <p class="page-main__intro page-main__intro--form">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
     <section class="photo-load">
+
       <h2 class="visually-hidden">Загрузка фотографии</h2>
       <form class="photo-load__form" action="https://echo.htmlacademy.ru" method="post">
         <picture>
-            <source media="(min-width: 660px)" srcset="http://placehold.it/300x400">
-            <img class="photo-load__picture" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
+          <source media="(min-width: 660px)" srcset="http://placehold.it/300x400">
+          <img class="photo-load__picture" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
         </picture>
         <div class="photo-load__tools-wrapper">
           <div class="photo-load__controls">
@@ -191,6 +201,7 @@
           </div>
         </div>
       </form>
+
     </section>
   </main>
   <footer class="page-footer">

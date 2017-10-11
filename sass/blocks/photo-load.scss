@@ -336,3 +336,10 @@
     left: 47%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photo-load {
+    width: 940px;
+    margin: 0 auto;
+  }
+}

@@ -3,6 +3,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
+  background-size: 100%;
 }
 
 .intro__title {
@@ -30,5 +31,14 @@
 
   .intro__title--photo {
     padding-bottom: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    width: 100%;
+    max-width: 1200px;
+    height: 395px;
+    margin: 0 auto;
   }
 }

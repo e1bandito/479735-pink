@@ -54,7 +54,12 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    min-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .page-main__intro--foto {
+    padding-bottom: 100px;
   }
 }

@@ -1,7 +1,9 @@
 .card__panorama {
   position: relative;
   display: block;
-  min-width: 320px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
   padding-bottom: 19px;
 }
 
@@ -146,7 +148,13 @@
 
 @media (min-width: $tablet-width) {
   .card__panorama {
-    margin-bottom: 30px;
+    padding-bottom: 50px;
+  }
+
+  .card__panorama {
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .card__panorama-daily-image {
@@ -180,10 +188,11 @@
   }
 
   .card__wrapper {
+    width: 644px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 8px;
+    margin: 0 auto;
   }
 
   .card {
@@ -197,7 +206,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 17px 18px 22px 28px;
+    padding: 17px 18px 23px 28px;
   }
 
   .card__text {
@@ -217,6 +226,12 @@
 @media (min-width: $desktop-width) {
   .card__wrapper {
     width: 956px;
+    margin: 0 auto;
+  }
+
+  .card__panorama {
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 

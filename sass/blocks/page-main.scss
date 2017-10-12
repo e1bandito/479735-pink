@@ -1,15 +1,18 @@
 .page-main {
-  max-width: 320px;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
 }
 
 .page-main__intro {
+  width: 280px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
   color: $dark-blue;
-  padding: 30px 20px 21px;
+  padding: 44px 20px 35px;
+  margin: 0 auto;
 }
 
 .page-main__text {
@@ -17,17 +20,27 @@
 }
 
 .page-main__intro--foto {
-  padding: 31px 35px 35px;
+  width: 250px;
+  padding: 45px 40px 48px;
 }
 
-.page-main__intro--form {
+.page-main__hide {
+  display: none;
+}
+
+.page-main__intro--hide {
+  display: block;
+}
+
+.page-main__intro--photo {
   padding: 21px 35px 35px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
-    min-width: 660px;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -43,23 +56,37 @@
   }
 
   .page-main__intro--foto {
-    padding-bottom: 57px;
+    width: 500px;
+    padding: 90px 20px 77px;
   }
 
   .page-main__intro--form {
+    width: 560px;
+    padding: 94px 50px 21px;
+  }
+
+  .page-main__intro--photo {
+    width: 660px;
     padding-top: 43px;
-    padding-bottom: 60px;
+    padding-bottom: 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .page-main__intro {
+    max-width: 770px;
     margin: 0 auto;
   }
 
   .page-main__intro--foto {
+    max-width: 610px;
+    margin: 0 auto;
     padding-bottom: 100px;
   }
 }

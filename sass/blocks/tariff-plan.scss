@@ -1,11 +1,12 @@
 .tariff-plan {
-  max-width: 320px;
+  width: 100%;
+  background-color: $light-grey;
   margin: 0 auto;
 }
 
 .tariff-plan__wrapper {
-  background-color: $light-grey;
   overflow: hidden;
+  margin: 0 auto;
 
   &::before {
     content: " ";
@@ -156,7 +157,13 @@
 
 @media (min-width: $tablet-width) {
   .tariff-plan {
-    min-width: 660px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tariff-plan__wrapper {
+    width: 660px;
     margin: 0 auto;
   }
 
@@ -247,7 +254,7 @@
 @media (min-width: $desktop-width) {
   .tariff-plan {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
   }
 

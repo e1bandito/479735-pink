@@ -1,5 +1,6 @@
 .page-header {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   background-color: $dark-blue;
 }
@@ -30,7 +31,12 @@
 
 @media (min-width: 660px) {
   .page-header {
-    width: 660px;
+    width: 100%;
+  }
+
+  .page-header__wrapper {
+//    width: 660px;
+    margin: 0 auto;
   }
 
   .page-header__logo {
@@ -42,7 +48,7 @@
 @media (min-width: 960px) {
   .page-header {
     width: 100%;
-    // max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
   }
 
@@ -62,7 +68,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(40, 54, 69, 0.7);
+    background-color: transparentize($black, 0.7);
     z-index: 999;
   }
 }

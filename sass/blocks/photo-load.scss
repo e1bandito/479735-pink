@@ -7,6 +7,11 @@
   padding: 19px;
 }
 
+.photo-load__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .photo-load__tools {
   display: flex;
   justify-content: space-between;
@@ -214,6 +219,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-load {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .photo-load__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .photo-load__tools {
     display: none;
   }

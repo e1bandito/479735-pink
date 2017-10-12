@@ -6,14 +6,20 @@
   background-size: 100%;
 }
 
+.intro__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .intro__title {
+  width: 280px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
   text-align: center;
   color: $white;
-  padding: 31px 20px 55px 20px;
-  margin: 0;
+  padding: 31px 20px 55px;
+  margin: 0 auto;
 }
 
 .intro__title--photo {
@@ -29,15 +35,26 @@
     padding-bottom: 78px;
   }
 
+  .intro__wrapper {
+    width: 660px;
+  }
+
   .intro__title--photo {
+    width: 640px;
     padding-bottom: 140px;
+  }
+
+  .intro__title--form {
+    width: 580px;
+    margin: 0 auto;
+    padding: 70px 40px 78px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     height: 395px;
     margin: 0 auto;
   }

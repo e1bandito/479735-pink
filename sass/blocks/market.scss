@@ -1,5 +1,6 @@
 .market {
-  max-width: 320px;
+  width: 100%;
+  min-width: 320px;
   background-color: $market-bg;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -7,6 +8,11 @@
   background-size: 700px 462px;
   margin: 0 auto;
 }
+
+.market__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
 
 .market__image-wrapper {
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -103,12 +109,18 @@
 
 @media (min-width: $tablet-width) {
   .market {
-    min-width: 660px;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     background-color: transparent;
     background-position: center center;
     background-size: auto 100%;
+  }
+
+  .market__wrapper {
+    width: 660px;
+    margin: 0 auto;
   }
 
   .market__nav {
@@ -158,14 +170,15 @@
 @media (min-width: $desktop-width) {
   .market {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
     height: 853px;
+    background-size: cover;
     margin: 0 auto;
   }
 
   .market__wrapper {
     width: 960px;
-    margin: o auto;
+    margin: 0 auto;
   }
 
   .market__nav {

@@ -503,6 +503,14 @@
     width: 376px;
   }
 
+  .contest-form__app-type-wrapper {
+    width: 431px;
+  }
+
+  .contest-form__contacts {
+    width: 940px;
+  }
+
   .contest-form__contacts input:nth-of-type(1) {
     position: relative;
     width: 371px;
@@ -531,12 +539,21 @@
     order: 4;
   }
 
-  .contest-form__achievements {
+  .contest-form__achievements-wrapper {
+    width: 940px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .contest-form__checkbox-label {
     width: 190px;
+  }
+
+  .contest-form__impression {
+    width: 940px;
+  }
+
+  .contest-form__textarea {
+    width: 100%;
   }
 }

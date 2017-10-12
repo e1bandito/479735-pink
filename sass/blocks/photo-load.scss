@@ -354,6 +354,11 @@
 
 @media (min-width: $desktop-width) {
   .photo-load {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .photo-load__wrapper {
     width: 940px;
     margin: 0 auto;
   }

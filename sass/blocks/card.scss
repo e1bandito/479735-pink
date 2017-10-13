@@ -237,4 +237,22 @@
     box-sizing: border-box;
     margin: 0 auto;
   }
+
+  .card__panorama-daily-image {
+    top: 40px;
+    right: 130px;
+  }
+
+  .card {
+    margin-bottom: 50px;
+  }
+
+  .page-main article:nth-of-type(3),
+  .page-main article:nth-of-type(5) {
+  margin-bottom: 50px;
+}
+
+  .card__info {
+    min-height: 148px;
+  }
 }

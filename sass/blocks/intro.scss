@@ -55,7 +55,11 @@
   .intro {
     width: 100%;
     max-width: 1920px;
-    height: 395px;
     margin: 0 auto;
+  }
+
+  .intro__title--photo {
+    padding-top: 174px;
+    padding-bottom: 100px;
   }
 }

@@ -1,6 +1,12 @@
-.tariff-plan__wrapper {
+.tariff-plan {
+  width: 100%;
   background-color: $light-grey;
+  margin: 0 auto;
+}
+
+.tariff-plan__wrapper {
   overflow: hidden;
+  margin: 0 auto;
 
   &::before {
     content: " ";
@@ -150,6 +156,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariff-plan {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tariff-plan__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .tariff-plan__list li:first-child {
     display: block;
   }
@@ -231,5 +248,22 @@
     left: 1px;
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff-plan {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .tariff-paln__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .tariff-plan__list {
+    height: 500px;
   }
 }

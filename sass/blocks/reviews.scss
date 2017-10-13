@@ -1,3 +1,8 @@
+.reviews {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .reviews__wrapper {
   padding-bottom: 23px;
 }
@@ -30,6 +35,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    min-width: 660px;
+    margin: 0 auto;
+  }
+
   .reviews__wrapper {
     padding-bottom: 0;
   }
@@ -63,5 +73,19 @@
     padding-top: 2px;
     padding-bottom: 27px;
     order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .reviews__wrapper {
+    width: 960px;
+    height: 380px;
+    margin: 0 auto;
   }
 }

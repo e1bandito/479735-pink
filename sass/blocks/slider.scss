@@ -95,7 +95,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider__button--5:checked ~ .tariff-plan__list {
+  .slider__button--5:checked ~ .tariff-plan__list,
+  .slider__button--6:checked ~ .tariff-plan__list {
     margin-left: 22px;
   }
 

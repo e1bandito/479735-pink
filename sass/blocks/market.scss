@@ -1,9 +1,17 @@
 .market {
+  width: 100%;
+  min-width: 320px;
   background-color: $market-bg;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -65px;
   background-size: 700px 462px;
+  margin: 0 auto;
+}
+
+.market__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .market__image-wrapper {
@@ -99,12 +107,20 @@
   padding-top: 22px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .market {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     background-color: transparent;
     background-position: center center;
     background-size: auto 100%;
+  }
+
+  .market__wrapper {
+    width: 660px;
+    margin: 0 auto;
   }
 
   .market__nav {
@@ -148,5 +164,41 @@
     height: 545px;
     background-size: 100%;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .market {
+    width: 100%;
+    max-width: 1920px;
+    height: 853px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .market__wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .market__nav {
+    padding: 216px 0 0 130px;
+  }
+
+  .market__list {
+    padding: 33px 0;
+  }
+
+  .market__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    padding-bottom: 52px;
+  }
+
+  .market__link-market {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 18px;
   }
 }

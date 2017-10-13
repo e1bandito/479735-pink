@@ -1,32 +1,31 @@
 .card__panorama {
   position: relative;
   display: block;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
   padding-bottom: 19px;
 }
 
 .card__panorama-image {
-  display: block;
-  position: relative;
   margin-bottom: -10px;
+}
 
-  &::before {
-    display: block;
-    position: absolute;
-    content: "Панорама дня";
-    width: 140px;
-    height: auto;
-    top: 0;
-    right: 21px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white;
-    padding: 6px 0;
-    background-color: $pink;
-  }
+.card__panorama-daily-image {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: auto;
+  top: -12px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  padding: 6px 0;
+  background-color: $pink;
 }
 
 .card__panorama-info {
@@ -144,5 +143,98 @@
     left: 0;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card__panorama {
+    padding-bottom: 50px;
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card__panorama-daily-image {
+    top: 45px;
+  }
+
+  .card__panorama-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding: 18px 27px 25px;
+  }
+
+  .card__panorama-user-name {
+    order: 1;
+  }
+
+  .card__panorama-text {
+    order: 3;
+  }
+
+  .card__panorama-like {
+    padding-right: 33px;
+    order: 2;
+    padding-bottom: 0;
+
+    &::before {
+      left: 140px;
+    }
+  }
+
+  .card__wrapper {
+    width: 644px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card__info {
+    width: 300px;
+    min-height: 148px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 17px 18px 23px 28px;
+  }
+
+  .card__text {
+    flex-grow: 1;
+  }
+
+  .card__like {
+    margin-bottom: auto;
+    padding-left: 0;
+
+    &::before {
+      left: 227px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__wrapper {
+    width: 956px;
+    margin: 0 auto;
+  }
+
+  .card__panorama {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card__panorama-info {
+    width: 940px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 }

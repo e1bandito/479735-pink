@@ -21,7 +21,8 @@
 
 body {
   position: relative;
-  max-width: 320px;
+  max-width: 1920px;
+  min-width: 320px;
   font-family: "Open sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -43,10 +44,4 @@ img {
   margin: -1px;
   padding: 0;
   border: 0;
-}
-
-@media (min-width: 660px) {
-  body {
-    min-width: 660px;
-  }
 }

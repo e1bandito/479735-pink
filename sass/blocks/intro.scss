@@ -58,7 +58,17 @@
     margin: 0 auto;
   }
 
+  .intro__wrapper {
+    width: 960px;
+  }
+
   .intro__title--photo {
+    padding-top: 174px;
+    padding-bottom: 100px;
+  }
+
+  .intro__title--form {
+    width: 750px;
     padding-top: 174px;
     padding-bottom: 100px;
   }

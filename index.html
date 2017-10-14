@@ -93,7 +93,22 @@
               </li>
             </ul>
             <div class="features__image">
-              <img class="features__image-item" src="./img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран" width="157" height="320">
+              <picture>
+                <source media="(min-width: 960px)" srcset="http://placehold.it/200x303">
+                <img class="features__image-item" src="./img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран">
+              </picture>
+            </div>
+            <div class="features__image">
+              <picture>
+                <source media="(min-width: 960px)" srcset="http://placehold.it/200x303">
+                <img class="features__image-item" src="./img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран">
+              </picture>
+            </div>
+            <div class="features__image">
+              <picture>
+                <source media="(min-width: 960px)" srcset="http://placehold.it/200x303">
+                <img class="features__image-item" src="./img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран">
+              </picture>
             </div>
           </div>
         </div>
@@ -101,10 +116,13 @@
 
       <section class="effect">
         <div class="effect__wrapper">
-          <img  class="effect__image" src="http://placehold.it/240x275" alt="">
+          <picture>
+            <source media="(min-width: 960px)" srcset="http://placehold.it/300x350">
+            <img  class="effect__image" src="http://placehold.it/240x275" alt="">
+          </picture>
           <div class="effect__info">
-            <h1 class="effect__title">Эффект<br> на 24 часа!</h1>
-            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект <br> от использования приложения длится целые сутки!</p>
+            <h1 class="effect__title">Эффект<br class="effect__title--desktop-hide"> на 24 часа!</h1>
+            <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__title--tablet-hide"> что положительный эффект <br class="effect__title--desktop-hide"> от использования приложения длится целые сутки!</p>
             <a class="effect__link" href="">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -121,24 +139,28 @@
               <div class="reviews__item-wrapper">
                 <h3 class="reviews__title">Николай Петров</h3>
                 <span class="reviews__id">25 лет, водитель трамвая</span>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__text"><span class="reviews__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote-hide">»</span></p>
               </div>
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__item-wrapper">
                 <h3 class="reviews__title">Петр Николаев</h3>
                 <span class="reviews__id">25 лет, водитель трамвая</span>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__text"><span class="reviews__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote-hide">»</span></p>
               </div>
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__item-wrapper">
                 <h3 class="reviews__title">Николай Сидоров</h3>
                 <span class="reviews__id">25 лет, водитель трамвая</span>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__text"><span class="reviews__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote-hide">»</span></p>
               </div>
             </li>
           </ul>
+          <div class="reviews__controls">
+            <button class="reviews__button-prev">Предыдущий отзыв</button>
+            <button class="reviews__button-next">Следующий отзыв</button>
+          </div>
           <div class="slider__controls">
             <label for="button-1"></label>
             <label for="button-2"></label>
@@ -180,7 +202,7 @@
             <li class="tariff-plan__item">
               <div class="tariff-plan__header">
                 <h3 class="tariff-plan__title">Анлим</h3>
-                <p class="tariff-plan__price">3,99 usd</p>
+                <p class="tariff-plan__price">9,99 usd</p>
               </div>
               <p class="tariff-plan__text tariff-plan__text--on-filter">Розовый фильтр</p>
               <p class="tariff-plan__text tariff-plan__text--on-smile">Смайлики</p>
@@ -230,7 +252,7 @@
           </svg>
 
         </a>
-        <div class="page-footer__social">
+        <div class="page-footer__social page-footer__social--index">
           <ul class="page-footer__list">
             <li class="page-footer__item">
               <a href="#" class="page-footer__link page-footer__link--twitter">Twitter

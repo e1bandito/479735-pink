@@ -18,17 +18,17 @@
   display: block;
 }
 
-.slider__button--4:checked ~ .tariff-plan__list {
-  margin-left: 22px;
-}
-
-.slider__button--5:checked ~ .tariff-plan__list {
-  margin-left: -256px;
-}
-
-.slider__button--6:checked ~ .tariff-plan__list {
-  margin-left: -534px;
-}
+// .slider__button--4:checked ~ .tariff-plan__list {
+//   margin-left: 22px;
+// }
+//
+// .slider__button--5:checked ~ .tariff-plan__list {
+//   margin-left: -256px;
+// }
+//
+// .slider__button--6:checked ~ .tariff-plan__list {
+//   margin-left: -534px;
+// }
 
 .slider__controls {
   text-align: center;
@@ -95,10 +95,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider__button--5:checked ~ .tariff-plan__list,
-  .slider__button--6:checked ~ .tariff-plan__list {
-    margin-left: 22px;
-  }
+  // .slider__button--5:checked ~ .tariff-plan__list,
+  // .slider__button--6:checked ~ .tariff-plan__list {
+  //   margin-left: 22px;
+  // }
 
   .slider__controls--tariff-plan {
     display: none;

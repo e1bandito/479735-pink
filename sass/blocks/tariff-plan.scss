@@ -258,12 +258,85 @@
     margin: 0 auto;
   }
 
-  .tariff-paln__wrapper {
+  .tariff-plan__wrapper {
     width: 960px;
     margin: 0 auto;
+    padding-left: 19px;
+    padding-top: 43px;
   }
 
   .tariff-plan__list {
-    height: 500px;
+    margin: 0 auto;
+    padding-bottom: 96px;
+    padding-top: 15px;
+  }
+
+  .tariff-plan__header {
+    width: 235px;
+  }
+
+  .tariff-plan__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-top: 15px;
+  }
+
+  .tariff-plan__price {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
+  .tariff-plan__text {
+    width: 233px;
+    height: 44px;
+  }
+
+  .tariff-plan__text--visible {
+    width: 235px;
+    height: 61px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 14px 0 15px 22px;
+  }
+
+  .tariff-plan__text--on-filter::after {
+    top: 118px;
+    right: 101px;
+  }
+
+  .tariff-plan__text--on-smile::after {
+    top: 178px;
+    right: 101px;
+  }
+
+  .tariff-plan__text--on-comment::after {
+    top: 239px;
+    right: 101px;
+  }
+
+  .tariff-plan__text--off-smile::after {
+    top: 174px;
+    right: 105px;
+  }
+
+  .tariff-plan__text--off-comment::after {
+    top: 236px;
+    right: 105px;
+  }
+
+  .tariff-plan__header--hit::before {
+    position: absolute;
+    content: " ";
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: 1px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
   }
 }

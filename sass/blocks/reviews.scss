@@ -34,6 +34,10 @@
   padding: 0 20px 9px;
 }
 
+.reviews__controls {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     min-width: 660px;
@@ -74,6 +78,10 @@
     padding-bottom: 27px;
     order: 3;
   }
+
+  .reviews__controls {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -84,8 +92,76 @@
   }
 
   .reviews__wrapper {
+    position: relative;
     width: 960px;
-    height: 380px;
+    padding-top: 137px;
     margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: " ";
+      top: 70px;
+      left: 441px;
+      width: 80px;
+      height: 65px;
+      background-image: url("http://placehold.it/80x65");
+    }
+  }
+
+  .reviews__list {
+    width: 730px;
+    margin: 0 auto;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .reviews__id {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .reviews__quote-hide {
+    display: none;
+  }
+
+  .slider__controls {
+    display: none;
+  }
+
+  .reviews__controls {
+    display: block;
+  }
+
+  .reviews__button-prev {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 212px;
+    left: 0;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    background-image: url("http://placehold.it/40x40");
+    cursor: pointer;
+  }
+
+  .reviews__button-next {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 212px;
+    right: 0;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    background-image: url("http://placehold.it/40x40");
+    cursor: pointer;
   }
 }

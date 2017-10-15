@@ -1,7 +1,3 @@
-//.contest-form {
-//  padding: 0 20px;
-//  margin: 0 auto;
-//}
 .contest-form {
   margin: 0 auto;
 }
@@ -40,8 +36,8 @@
   }
 
   &:focus {
-    border: 2px solid $border-color;
-    outline: 2px solid $pink;
+    border: 2px solid $pink;
+    outline: none;
   }
 }
 
@@ -378,39 +374,40 @@
 
   .contest-form__contacts input:nth-of-type(1) {
     position: relative;
-    width: 500px;
+    width: 438px;
     height: 62px;
-    padding-right: 80px;
+    padding-right: 20px;
     margin-bottom: 10px;
     order: 1;
+    z-index: 1;
   }
 
   .contest-form__phone-icon {
     position: absolute;
-    top: 48px;
+    top: 46px;
     right: 62px;
     width: 58px;
-    height: 58px;
+    height: 62px;
     background-color: $border-color;
-    z-index: 1;
   }
 
   .contest-form__contacts input:nth-of-type(2) {
-    width: 500px;
+    width: 438px;
     height: 62px;
-    padding-right: 80px;
+    padding-right: 20px;
     margin-bottom: 10px;
     order: 3;
+    z-index: 1;
   }
 
   .contest-form__adress-icon {
     position: absolute;
-    top: 179px;
+    top: 177px;
     right: 62px;
     width: 58px;
-    height: 58px;
+    height: 62px;
     background-color: $border-color;
-    z-index: 1;
+    // z-index: 1;
   }
 
   .contest-form__app-type {
@@ -472,6 +469,7 @@
   }
 
   .contest-form__submit {
+    width: 620px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -481,10 +479,7 @@
 
   .contest-form__button {
     width: 300px;
-  }
-
-  .contest-form__text {
-    margin-left: 139px;
+    margin: 0;
   }
 
   .contest-form__text--hide {
@@ -549,7 +544,7 @@
 
   .contest-form__contacts {
     width: 940px;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 38px;
     padding-bottom: 14px;
     margin-bottom: 64px;
@@ -560,28 +555,32 @@
   }
 
   .contest-form__adress-icon {
-    top: 45px;
-    right: 507px;
+    top: 43px;
+    right: 504px;
+    width: 60px;
   }
 
   .contest-form__phone-icon {
-    top: 45px;
+    top: 43px;
+    right: 59px;
+    width: 60px;
   }
 
   .contest-form__contacts input:nth-of-type(1) {
     position: relative;
-    width: 373px;
+    width: 314px;
     height: 62px;
-    padding-right: 80px;
+    padding-right: 20px;
     margin-bottom: 10px;
     order: 1;
   }
 
   .contest-form__contacts input:nth-of-type(2) {
-    width: 373px;
+    width: 314px;
     height: 62px;
-    padding-right: 80px;
+    padding-right: 20px;
     margin-bottom: 10px;
+    margin-left: 131px;
     order: 2;
   }
 
@@ -594,6 +593,7 @@
   .contest-form__contacts label:nth-of-type(2) {
     padding-left: 20px;
     padding-right: 256px;
+    margin-left: auto;
     order: 4;
   }
 

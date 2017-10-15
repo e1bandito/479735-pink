@@ -31,6 +31,21 @@
   padding: 0 20px 23px 20px;
 }
 
+.contacts__text--email {
+  color: $pink;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
 .contacts__email b {
   padding-bottom: 5px;
 }

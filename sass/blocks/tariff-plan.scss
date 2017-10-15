@@ -84,15 +84,32 @@
   border-right: 1px solid #e5e5e5;
 }
 
-.tariff-plan__header--hit::before {
-  position: absolute;
-  content: " ";
-  width: 75px;
-  height: 75px;
-  top: 0;
-  left: -1px;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
+.tariff-plan__header--hit {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: -1px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Хит";
+    width: 75px;
+    height: 75px;
+    top: -10px;
+    left: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $white;
+    text-transform: uppercase;
+    transform: rotate(315deg);
+  }
 }
 
 .tariff-plan__text--on-filter::after {
@@ -239,15 +256,22 @@
     right: 65px;
   }
 
-  .tariff-plan__header--hit::before {
-    position: absolute;
-    content: " ";
-    width: 75px;
-    height: 75px;
-    top: 0;
-    left: 1px;
-    background-image: url("../img/bg-hit-tablet.svg");
-    background-repeat: no-repeat;
+  .tariff-plan__header--hit {
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 75px;
+      height: 75px;
+      top: 0;
+      left: 1px;
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: -17px;
+      left: 20px;
+    }
   }
 }
 
@@ -329,14 +353,21 @@
     right: 105px;
   }
 
-  .tariff-plan__header--hit::before {
-    position: absolute;
-    content: " ";
-    width: 75px;
-    height: 75px;
-    top: 0;
-    left: 1px;
-    background-image: url("../img/bg-hit.svg");
-    background-repeat: no-repeat;
+  .tariff-plan__header--hit {
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 75px;
+      height: 75px;
+      top: 0;
+      left: 1px;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: -10px;
+      left: 24px;
+    }
   }
 }

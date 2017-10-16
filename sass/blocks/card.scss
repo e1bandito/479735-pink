@@ -72,12 +72,13 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 14px;
-    height: 12px;
+    width: 15px;
+    height: 14px;
     top: 15px;
     left: 0;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -137,12 +138,13 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 14px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     top: 15px;
     left: 0;
     background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 

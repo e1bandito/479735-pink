@@ -112,6 +112,7 @@
   background-image: url("../img/icon-editor-contrast.svg");
   background-repeat: no-repeat;
   background-position: center 9px;
+  background-size: 62%;
 }
 
 .photo-load__radio-label--contrast:hover input[type="radio"] + .photo-load__checkbox-radioindikator--contrast {
@@ -123,6 +124,7 @@
   background-image: url("../img/icon-editor-contrast-hover.svg");
   background-repeat: no-repeat;
   background-position: center 9px;
+  background-size: 62%;
 }
 
 .photo-load__radio-label--contrast input[type="radio"]:checked + .photo-load__checkbox-radioindikator--contrast {
@@ -134,6 +136,7 @@
   background-image: url("../img/icon-editor-contrast-checked.svg");
   background-repeat: no-repeat;
   background-position: center 9px;
+  background-size: 62%;
 }
 
 .photo-load__range {

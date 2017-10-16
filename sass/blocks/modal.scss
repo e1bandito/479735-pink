@@ -3,6 +3,7 @@
   width: 320px;
   height: auto;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  margin: 0 auto;
 }
 
 .modal__title {
@@ -53,5 +54,39 @@
   &:active {
     background-color: $green-btn-active;
     color: $green-btn-active-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    display: none;
+    width: 464px;
+    box-sizing: border-box;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 37px 80px 0;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    padding: 27px 70px;
+  }
+
+  .modal__text--hide {
+    display: none;
+  }
+
+  .modal__button {
+    width: 299px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    display: none;
+    width: 782px;
   }
 }

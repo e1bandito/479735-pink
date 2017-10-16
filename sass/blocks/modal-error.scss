@@ -2,6 +2,7 @@
   display: none;
   width: 320px;
   height: auto;
+  margin: 0 auto;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
@@ -51,5 +52,42 @@
   &:active {
     background-color: $green-btn-active;
     color: $green-btn-active-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-error {
+    display: none;
+    width: 464px;
+    box-sizing: border-box;
+  }
+
+  .modal-error__title {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 37px 110px 0;
+    margin: 0;
+  }
+
+  .modal-error__text {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 27px 80px;
+    margin: 0;
+  }
+
+  .modal-error__button-wrapper {
+    padding-bottom: 52px;
+  }
+
+  .modal-error__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-error {
+    display: none;
+    width: 462px;
   }
 }

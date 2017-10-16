@@ -4,7 +4,22 @@
 }
 
 .features__wrapper {
+  position: relative;
   background-color: $light-grey;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 660px;
+    height: 140px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 }
 
 .features__title {
@@ -29,17 +44,6 @@
   padding: 65px 20px 0 20px;
   overflow: hidden;
   margin: 0 auto;
-
-  &::before {
-    content: " ";
-    position: absolute;
-    top: -20px;
-    right: -500px;
-    width: 1200px;
-    height: 95px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 .features__list {
@@ -84,6 +88,22 @@
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .features__wrapper {
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 960px;
+      height: 140px;
+      background-image: url("../img/bg-triangle-white.svg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
   }
 
   .features__title {
@@ -134,6 +154,20 @@
     max-width: 1920px;
     margin: 0 auto;
     padding-bottom: 30px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 1920px;
+      height: 140px;
+      background-image: url("../img/bg-triangle-white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .features__container {
@@ -160,7 +194,7 @@
 
   .features h2:nth-of-type(2) {
     width: 600px;
-    padding: 0 50px 70px;
+    padding: 0 50px 54px;
   }
 
   .features__image {

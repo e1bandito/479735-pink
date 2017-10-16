@@ -1,6 +1,7 @@
 .contacts {
   max-width: 320px;
   margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .contacts__title {
@@ -64,12 +65,15 @@
   &::before {
     content: " ";
     position: absolute;
-    top: -12px;
-    right: -500px;
-    width: 960px;
+    top: -44px;
+    right: 0;
+    left: 0;
+    width: 320px;
     height: 95px;
+    margin: auto;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
+    background-position: center center;
     z-index: 1;
   }
 }
@@ -77,6 +81,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     min-width: 660px;
+    padding-bottom: 10px;
     margin: 0 auto;
   }
 
@@ -106,7 +111,7 @@
   }
 
   .contacts__adress {
-    padding-bottom: 12px;
+    padding-bottom: 0;
   }
 
   .mymap {
@@ -117,12 +122,15 @@
     &::before {
       content: " ";
       position: absolute;
-      top: 0;
-      right: -330px;
-      width: 960px;
+      top: -17px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 660px;
       height: 95px;
       background-image: url("../img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
+      background-position: center center;
       z-index: 1;
     }
   }
@@ -188,5 +196,20 @@
     max-width: 1920px;
     height: 510px;
     margin: 0 auto;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -17px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 960px;
+      height: 95px;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 1;
+    }
   }
 }

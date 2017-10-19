@@ -1,23 +1,28 @@
 .tariff-plan {
+  position: relative;
   width: 100%;
   background-color: $light-grey;
-  margin: 0 auto;
-}
-
-.tariff-plan__wrapper {
-  overflow: hidden;
   margin: 0 auto;
 
   &::before {
     content: " ";
     position: absolute;
-    top: -20px;
-    right: -450px;
-    width: 1200px;
-    height: 95px;
+    top: -1px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 660px;
+    height: 140px;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
+    background-position: top right;
   }
+}
+
+.tariff-plan__wrapper {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .tariff-plan__list {
@@ -34,7 +39,7 @@
 
 .tariff-plan__item {
   position: relative;
-  margin-top: 105px;
+  margin-top: 100px;
 }
 
 .tariff-plan__header {
@@ -84,15 +89,32 @@
   border-right: 1px solid #e5e5e5;
 }
 
-.tariff-plan__header--hit::before {
-  position: absolute;
-  content: " ";
-  width: 75px;
-  height: 75px;
-  top: 0;
-  left: -1px;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
+.tariff-plan__header--hit {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 75px;
+    height: 75px;
+    top: 0;
+    left: -1px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Хит";
+    width: 75px;
+    height: 75px;
+    top: -10px;
+    left: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $white;
+    text-transform: uppercase;
+    transform: rotate(315deg);
+  }
 }
 
 .tariff-plan__text--on-filter::after {
@@ -160,11 +182,27 @@
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 960px;
+      height: 140px;
+      background-image: url("../img/bg-triangle-white.svg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
   }
 
   .tariff-plan__wrapper {
-    width: 660px;
+    width: 620px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .tariff-plan__list li:first-child {
@@ -174,8 +212,12 @@
   .tariff-plan__list {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
     margin: 0 auto;
+  }
+
+  .tariff-plan__item {
+    margin-top: 96px;
   }
 
   .tariff-plan__title {
@@ -239,15 +281,22 @@
     right: 65px;
   }
 
-  .tariff-plan__header--hit::before {
-    position: absolute;
-    content: " ";
-    width: 75px;
-    height: 75px;
-    top: 0;
-    left: 1px;
-    background-image: url("../img/bg-hit-tablet.svg");
-    background-repeat: no-repeat;
+  .tariff-plan__header--hit {
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 75px;
+      height: 75px;
+      top: 0;
+      left: 1px;
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: -17px;
+      left: 20px;
+    }
   }
 }
 
@@ -256,14 +305,109 @@
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 1920px;
+      height: 140px;
+      background-image: url("../img/bg-triangle-white.svg");
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
   }
 
-  .tariff-paln__wrapper {
-    width: 960px;
+  .tariff-plan__wrapper {
+    width: 940px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 43px;
   }
 
   .tariff-plan__list {
-    height: 500px;
+    margin: 0 auto;
+    padding-bottom: 96px;
+    padding-top: 15px;
+  }
+
+  .tariff-plan__header {
+    width: 235px;
+  }
+
+  .tariff-plan__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-top: 15px;
+  }
+
+  .tariff-plan__price {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+
+  .tariff-plan__text {
+    width: 233px;
+    height: 44px;
+  }
+
+  .tariff-plan__text--visible {
+    width: 235px;
+    height: 61px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 14px 0 15px 22px;
+  }
+
+  .tariff-plan__text--on-filter::after {
+    top: 118px;
+    right: 101px;
+  }
+
+  .tariff-plan__text--on-smile::after {
+    top: 178px;
+    right: 101px;
+  }
+
+  .tariff-plan__text--on-comment::after {
+    top: 239px;
+    right: 101px;
+  }
+
+  .tariff-plan__text--off-smile::after {
+    top: 174px;
+    right: 105px;
+  }
+
+  .tariff-plan__text--off-comment::after {
+    top: 236px;
+    right: 105px;
+  }
+
+  .tariff-plan__header--hit {
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 75px;
+      height: 75px;
+      top: 0;
+      left: 1px;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: -10px;
+      left: 24px;
+    }
   }
 }

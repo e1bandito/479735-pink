@@ -35,10 +35,10 @@
               <a href="./photo.html" class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link">Конкурс</a>
+              <a class="main-nav__link main-nav__link--active">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Html Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -53,7 +53,7 @@
       </div>
     </section>
     <h2 class="visually-hidden">Форма для конкурса</h2>
-    <p class="page-main__intro page-main__intro--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="page-main__text">Пожалуйста, заполните форму ниже:</span></p>
+    <p class="page-main__intro page-main__intro--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="page-main__text"> Пожалуйста, заполните форму ниже:</span></p>
     <form  class="contest-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="contest-form__full-name">
         <label class="contest-form__label" for="last-name">Фамилия:</label>
@@ -66,27 +66,27 @@
       <div class="contest-form__achievements">
         <div class="contest-form__achievements-wrapper">
           <h3 class="contest-form__title">Ваши безбашенные достижения в путешествии</h3>
-          <label for="shark" class="contest-form__checkbox-label">
+          <label for="shark" class="contest-form__checkbox-label contest-form__checkbox-label--order1">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="selfie with shark" id="shark" checked>
             <span class="contest-form__checkbox-indikator"></span>
         Сделал селфи с акулой</label>
-          <label for="beach" class="contest-form__checkbox-label">
+          <label for="beach" class="contest-form__checkbox-label contest-form__checkbox-label--order4">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="Burnt on the beach" id="beach" checked>
             <span class="contest-form__checkbox-indikator"></span>
           Обгорел на пляже</label>
-          <label for="fatality" class="contest-form__checkbox-label">
+          <label for="fatality" class="contest-form__checkbox-label contest-form__checkbox-label--order2">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="I saw Chuck Norris" id="fatality">
             <span class="contest-form__checkbox-indikator"></span>
           Видел Чака Норриса</label>
-          <label for="souvenir" class="contest-form__checkbox-label">
+          <label for="souvenir" class="contest-form__checkbox-label contest-form__checkbox-label--order5">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="buy souvenirs" id="souvenir">
             <span class="contest-form__checkbox-indikator"></span>
           Накупил сувениров</label>
-          <label for="tower" class="contest-form__checkbox-label">
+          <label for="tower" class="contest-form__checkbox-label contest-form__checkbox-label--order3">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="protect the tower" id="tower" checked>
             <span class="contest-form__checkbox-indikator"></span>
           Удержал башню</label>
-          <label for="hotel" class="contest-form__checkbox-label">
+          <label for="hotel" class="contest-form__checkbox-label contest-form__checkbox-label--order6">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="destroy hotel" id="hotel">
             <span class="contest-form__checkbox-indikator"></span>
           Разгромил отель</label>
@@ -95,10 +95,10 @@
       <div class="contest-form__contacts">
         <h3 class="contest-form__title">Контактная информация</h3>
         <label class="contest-form__label" for="telephone">Номер телефона</label>
-        <input class="contest-form__input" type="text" name="telephone number" id="telephone" placeholder="Номер, пожалуйста">
+        <input class="contest-form__input" type="tel" name="telephone number" id="telephone" placeholder="Номер, пожалуйста">
         <span class="contest-form__phone-icon"></span>
         <label class="contest-form__label" for="adress">Адрес почты</label>
-        <input class="contest-form__input" type="text" name="Адрес почты" id="adress" placeholder="Введите почту *">
+        <input class="contest-form__input" type="email" name="Адрес почты" id="adress" placeholder="Введите почту *">
         <span class="contest-form__adress-icon"></span>
       </div>
       <div class="contest-form__app-type">
@@ -124,7 +124,7 @@
       </div>
       <div class="contest-form__submit">
         <button class="button contest-form__button" type="submit">Отправить форму</button>
-        <p class="contest-form__text"><span class="contest-form__text--red">*</span> — обязательные поля</p>
+        <p class="contest-form__text"><span class="contest-form__text--red">*</span> — обязательные <span class="contest-form__text--hide">для заполнения</span> поля</p>
       </div>
     </form>
   </main>
@@ -174,7 +174,7 @@
       </div>
       <div class="page-footer__copyright">
         <p class="page-footer__text">Разработано</p>
-        <a href="#" class="page-footer__copyright-link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewbox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
           </svg>
@@ -185,7 +185,7 @@
   <section class="modal">
     <div class="modal__info">
       <h3 class="modal__title">Ваша заявка отправлена</h3>
-      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br> оповестим вас.</p>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br class="modal__text--hide"> оповестим вас.</p>
     </div>
     <div class="modal__button-wrapper">
       <button class="button modal__button" type="button">Закрыть окно</button>
@@ -200,5 +200,8 @@
       <button class="button modal-error__button" type="button">OK</button>
     </div>
   </section>
+
+  <script src="./js/picturefill.min.js"></script>
+
 </body>
 </html>

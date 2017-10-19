@@ -1,6 +1,7 @@
 .contacts {
   max-width: 320px;
   margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .contacts__title {
@@ -31,6 +32,21 @@
   padding: 0 20px 23px 20px;
 }
 
+.contacts__text--email {
+  color: $pink;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
 .contacts__email b {
   padding-bottom: 5px;
 }
@@ -49,12 +65,15 @@
   &::before {
     content: " ";
     position: absolute;
-    top: -12px;
-    right: -500px;
-    width: 960px;
+    top: -44px;
+    right: 0;
+    left: 0;
+    width: 320px;
     height: 95px;
+    margin: auto;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
+    background-position: center center;
     z-index: 1;
   }
 }
@@ -62,6 +81,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     min-width: 660px;
+    padding-bottom: 10px;
     margin: 0 auto;
   }
 
@@ -91,7 +111,7 @@
   }
 
   .contacts__adress {
-    padding-bottom: 12px;
+    padding-bottom: 0;
   }
 
   .mymap {
@@ -102,12 +122,15 @@
     &::before {
       content: " ";
       position: absolute;
-      top: 0;
-      right: -330px;
-      width: 960px;
+      top: -17px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 660px;
       height: 95px;
       background-image: url("../img/bg-triangle-white-footer.svg");
       background-repeat: no-repeat;
+      background-position: center center;
       z-index: 1;
     }
   }
@@ -116,20 +139,77 @@
 @media (min-width: 960px) {
   .contacts {
     width: 100%;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
   .contacts__wrapper {
     width: 960px;
-    height: 200px;
+    padding: 0;
     margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .contacts__title {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    padding-top: 64px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__phone b {
+    padding-bottom: 25px;
+  }
+
+  .contacts__email b {
+    padding-bottom: 26px;
+  }
+
+  .contacts__adress b {
+    padding-bottom: 25px;
+  }
+
+  .contacts__text {
+    padding: 0;
+  }
+
+  .contacts__phone {
+    width: 250px;
+    order: 1;
+  }
+
+  .contacts__email {
+    width: 250px;
+    order: 3;
+  }
+
+  .contacts__adress {
+    width: 250px;
+    order: 2;
   }
 
   .mymap {
     width: 100%;
     max-width: 1920px;
-    height: 500px;
+    height: 510px;
     margin: 0 auto;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: -17px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 960px;
+      height: 95px;
+      background-image: url("../img/bg-triangle-white-footer.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 1;
+    }
   }
 }

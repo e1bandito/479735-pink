@@ -170,10 +170,32 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 66px;
+    padding-bottom: 70px;
   }
 
   .page-footer__wrapper {
     width: 940px;
     margin: 0 auto;
+  }
+
+  .page-footer__copyright {
+    width: 152px;
+  }
+
+  .page-footer__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .page-footer__social {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .page-footer__social--index {
+    padding-left: 2px;
+    padding-top: 11px;
   }
 }

@@ -81,6 +81,7 @@
   .main-nav__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 37px;
     padding-right: 0;
   }
@@ -95,11 +96,29 @@
   }
 
   .main-nav__link {
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
     box-shadow: none;
     padding: 9px;
+
+    &:active {
+      opacity: 0.3;
+      color: $white;
+      box-shadow: none;
+    }
+  }
+
+  .main-nav__link--active::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    right: 9px;
+    left: 10px;
+    bottom: -4px;
+    height: 2px;
+    background-color: $white;
   }
 }

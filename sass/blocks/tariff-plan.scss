@@ -39,7 +39,7 @@
 
 .tariff-plan__item {
   position: relative;
-  margin-top: 105px;
+  margin-top: 100px;
 }
 
 .tariff-plan__header {
@@ -212,8 +212,12 @@
   .tariff-plan__list {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 70px;
+    padding-bottom: 68px;
     margin: 0 auto;
+  }
+
+  .tariff-plan__item {
+    margin-top: 96px;
   }
 
   .tariff-plan__title {

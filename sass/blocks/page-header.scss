@@ -15,18 +15,21 @@
   width: 75px;
   height: 22px;
   padding: 21px 0 27px 20px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
 
-  &:hover path {
-    fill: $pink;
+  &:hover {
+    background-image: url("../img/logo-pink-white-mobile-hover.svg");
   }
 
-  &:active path {
-    fill: transparentize($pink, 0.3);
+  &:active {
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    opacity: 0.3;
   }
-}
-
-.page-header__logo svg {
-  pointer-events: none;
 }
 
 @media (min-width: 660px) {
@@ -35,7 +38,6 @@
   }
 
   .page-header__wrapper {
-    //  width: 660px;
     margin: 0 auto;
   }
 
@@ -44,6 +46,20 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    background-image: url("../img/logo-pink-white-tablet.svg");
+
+    &:hover {
+      background-image: url("../img/logo-pink-white-tablet-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/logo-pink-white-tablet.svg");
+      opacity: 0.3;
+    }
+  }
+}
 
 @media (min-width: 960px) {
   .page-header {
@@ -61,7 +77,16 @@
   }
 
   .page-header__logo {
-    padding-left: 0;
+    background-image: url("../img/logo-pink-white-desktop.svg");
+
+    &:hover {
+      background-image: url("../img/logo-pink-white-desktop-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/logo-pink-white-desktop.svg");
+      opacity: 0.3;
+    }
   }
 
   .page-header__opacity {

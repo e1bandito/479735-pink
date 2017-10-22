@@ -14,13 +14,15 @@
   height: 40px;
   margin: 0 auto;
   padding-top: 40px;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 
-  &:hover path {
-    fill: $pink;
-  }
-
-  &:active g path {
-    fill: $dark-blue;
+  &:hover {
+    background-image: url("../img/logo-pink-blue-mobile-hover.svg");
   }
 
   &:active {
@@ -177,6 +179,19 @@
   .page-footer__wrapper {
     width: 940px;
     margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+
+    &:hover {
+      background-image: url("../img/logo-pink-blue-desktop-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/logo-pink-blue-desktop.svg");
+      opacity: 0.3;
+    }
   }
 
   .page-footer__copyright {

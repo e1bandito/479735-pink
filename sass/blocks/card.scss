@@ -28,6 +28,12 @@
   background-color: $pink;
 }
 
+.card__panorama-link {
+  display: block;
+  max-width: 320px;
+  height: auto;
+}
+
 .card__panorama-info {
   background-color: $light-grey;
   color: $dark-blue;
@@ -95,6 +101,12 @@
   margin-bottom: 21px;
 }
 
+.card__link {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
 .card__info {
   background-color: $light-grey;
   color: $dark-blue;
@@ -160,6 +172,12 @@
     top: 45px;
   }
 
+  .card__panorama-link {
+    display: block;
+    max-width: 660px;
+    height: auto;
+  }
+
   .card__panorama-info {
     display: flex;
     justify-content: space-between;
@@ -208,6 +226,12 @@
     padding: 17px 18px 23px 28px;
   }
 
+  .card__link {
+    width: 300px;
+    height: auto;
+    display: block;
+  }
+
   .card__text {
     flex-grow: 1;
   }
@@ -234,6 +258,12 @@
     margin: 0 auto;
   }
 
+  .card__panorama-link {
+    display: block;
+    max-width: 1200px;
+    height: auto;
+  }
+
   .card__panorama-info {
     width: 940px;
     box-sizing: border-box;
@@ -247,6 +277,12 @@
 
   .card {
     margin-bottom: 50px;
+  }
+
+  .card__link {
+    width: 300px;
+    height: auto;
+    display: block;
   }
 
   .page-main article:nth-of-type(3),

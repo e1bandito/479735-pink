@@ -230,18 +230,18 @@
 
   .market__image-wrapper {
     position: absolute;
-    left: 352px;
+    left: 151px;
     bottom: 0;
-    width: 560px;
+    width: 800px;
     height: 645px;
     padding: 0;
-    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: -220px center;
+    background-position: center center;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: cover;
     }
   }

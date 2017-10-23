@@ -152,7 +152,7 @@
   }
 
   .page-footer__logo {
-    padding: 5px 0 0 0;
+    padding: 10px 0 0 0;
     margin: 0;
   }
 
@@ -182,6 +182,7 @@
   }
 
   .page-footer__logo {
+    padding-top: 10px;
     background-image: url("../img/logo-pink-blue-desktop.svg");
 
     &:hover {

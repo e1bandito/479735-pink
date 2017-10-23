@@ -32,23 +32,22 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .page-header {
     width: 100%;
   }
 
   .page-header__wrapper {
     margin: 0 auto;
+    padding-top: 27px;
   }
 
   .page-header__logo {
-    padding: 43px 0 45px 93px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__logo {
+    width: 150px;
+    height: 40px;
+    padding: 0 0 43px 16px;
     background-image: url("../img/logo-pink-white-tablet.svg");
+    background-position: top right;
 
     &:hover {
       background-image: url("../img/logo-pink-white-tablet-hover.svg");
@@ -72,12 +71,18 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     width: 960px;
     margin: 0 auto;
+    padding: 28px 0 40px 8px;
   }
 
   .page-header__logo {
+    width: 150px;
+    height: 40px;
     background-image: url("../img/logo-pink-white-desktop.svg");
+    background-position: center center;
+    padding: 0;
 
     &:hover {
       background-image: url("../img/logo-pink-white-desktop-hover.svg");

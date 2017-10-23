@@ -5,10 +5,13 @@
   background-color: $dark-blue;
 }
 
-// .page-header__opacity {
-//   position: absolute;
-//   background-color: rgba(40, 54, 69, 0.7);
-// }
+.page-header__opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparentize($black, 0.7);
+  z-index: 999;
+}
 
 .page-header__logo {
   display: block;
@@ -65,6 +68,7 @@
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    background-color: $dark-blue;
   }
 
   .page-header__wrapper {
@@ -94,7 +98,7 @@
     }
   }
 
-  .page-header__opacity {
+  .page-header__opacity--desktop {
     position: absolute;
     top: 0;
     left: 0;

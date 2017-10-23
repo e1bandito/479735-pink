@@ -13,6 +13,11 @@
   }
 }
 
+.market__image-position {
+  background-position: center 0;
+  padding-top: 60px;
+}
+
 .market__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -124,7 +129,7 @@
     position: relative;
     background-color: transparent;
     background-position: center center;
-    background-size: auto 100%;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -186,6 +191,10 @@
       background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: cover;
     }
+  }
+
+  .market__image-position {
+    padding-top: 110px;
   }
 }
 

@@ -10,6 +10,10 @@
   }
 }
 
+.intro__image-position {
+  background-position: center 0;
+}
+
 .intro__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -26,6 +30,10 @@
   margin: 0 auto;
 }
 
+.intro__title--position {
+  padding-top: 117px;
+}
+
 .intro__title--photo {
   padding-bottom: 83px;
 }
@@ -37,6 +45,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .intro__image-position {
+    background-position: center 0;
   }
 
   .intro__title {
@@ -60,6 +72,10 @@
     width: 580px;
     margin: 0 auto;
     padding: 70px 40px 78px;
+  }
+
+  .intro__title--position {
+    padding-top: 167px;
   }
 }
 

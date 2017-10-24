@@ -13,7 +13,7 @@
   width: 148px;
   height: 40px;
   margin: 0 auto;
-  padding-top: 40px;
+  margin-top: 55px;
   text-indent: 150%;
   white-space: nowrap;
   overflow: hidden;
@@ -28,6 +28,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.page-footer__logo--photo {
+  margin-top: 40px;
 }
 
 .page-footer__logo svg {

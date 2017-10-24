@@ -5,7 +5,7 @@
 .main-nav__toggle {
   position: absolute;
   top: -50px;
-  right: 23px;
+  right: 19px;
   width: 25px;
   height: 25px;
   background-color: $dark-blue;
@@ -87,7 +87,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
-    top: -67px;
+    top: -66px;
+    right: 19px;
   }
 }
 

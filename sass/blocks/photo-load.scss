@@ -3,8 +3,11 @@
   margin-top: 9px;
 }
 
-.photo-load__picture {
-  padding: 19px;
+.photo-load__link {
+  margin: 19px;
+  width: 280px;
+  height: auto;
+  display: block;
 }
 
 .photo-load__wrapper {
@@ -222,11 +225,11 @@
   }
 }
 
-.photo-load__link {
-  width: 280px;
-  height: auto;
-  display: block;
-}
+// .photo-load__link {
+//   width: 280px;
+//   height: auto;
+//   display: block;
+// }
 
 @media (min-width: $tablet-width) {
   .photo-load {
@@ -381,9 +384,9 @@
     margin: 0 auto;
   }
 
-  .photo-load__picture {
-    padding-top: 20px;
-    padding-left: 80px;
+  .photo-load__link {
+    margin-top: 20px;
+    margin-left: 80px;
   }
 
   .photo-load__tools-wrapper {

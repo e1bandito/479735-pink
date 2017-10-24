@@ -222,6 +222,12 @@
   }
 }
 
+.photo-load__link {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .photo-load {
     width: 100%;
@@ -353,6 +359,12 @@
 
   .photo-load__toggle--contrast {
     left: 47%;
+  }
+
+  .photo-load__link {
+    width: 300px;
+    height: auto;
+    display: block;
   }
 }
 

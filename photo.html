@@ -223,21 +223,23 @@
       <div class="photo-load__wrapper">
       <h2 class="visually-hidden">Загрузка фотографии</h2>
       <form class="photo-load__form" action="https://echo.htmlacademy.ru" method="post">
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+        <a class="photo-load__link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
 
-          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
 
-          <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
 
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
 
-          <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
 
-          <source media="(min-width: 320px)" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x">
+            <source media="(min-width: 320px)" srcset="img/photo-road-mobile@1x.jpg 1x, img/photo-road-mobile@2x.jpg 2x">
 
-          <img class="photo-load__picture" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
-        </picture>
+            <img class="photo-load__picture" src="img/photo-road-mobile@1x.jpg" alt="Загрузить фото">
+          </picture>
+        </a>
         <div class="photo-load__tools-wrapper">
           <div class="photo-load__controls">
             <ul class="photo-load__tools">

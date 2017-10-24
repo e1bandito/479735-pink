@@ -80,7 +80,7 @@
   fill: $pink;
 }
 
-.page-footer__link--twitter:active path {
+.page-footer__link--twitter:active svg {
   opacity: 0.3;
 }
 
@@ -91,7 +91,7 @@
   fill: $pink;
 }
 
-.page-footer__link--facebook:active path {
+.page-footer__link--facebook:active svg {
   opacity: 0.3;
 }
 
@@ -102,7 +102,7 @@
   fill: $pink;
 }
 
-.page-footer__link--youtube:active path {
+.page-footer__link--youtube:active svg {
   opacity: 0.3;
 }
 
@@ -123,11 +123,11 @@
 .page-footer__copyright-link {
   fill: $pink;
 
-  &:hover path {
+  &:hover {
     fill: $black;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 }

@@ -119,8 +119,7 @@
 
 .contest-form__checkbox-label input[type="checkbox"]:focus + .contest-form__checkbox-indikator,
 .contest-form__checkbox-label input[type="radio"]:focus + .contest-form__checkbox-radioindikator {
-  // outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px solid $pink;
 }
 
 .contest-form__contacts {

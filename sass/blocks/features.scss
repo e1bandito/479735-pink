@@ -117,15 +117,28 @@
 
   .features h2:nth-child(2) {
     width: 400px;
-    padding: 0 130px 38px;
+    padding: 0 130px 48px;
   }
 
   .features__container {
     width: 620px;
     margin: 0 auto;
-    padding: 56px 20px 0;
+    padding: 46px 20px 0;
     display: flex;
     justify-content: space-between;
+  }
+
+  .features__image {
+    padding-top: 0;
+    margin-top: -43px;
+    height: 481px;
+    vertical-align: bottom;
+    background-size: 100%;
+  }
+
+  .features__image-item {
+    vertical-align: bottom;
+    height: 481px;
   }
 
   .features__list {
@@ -199,11 +212,15 @@
   }
 
   .features__image {
-    width: 310px;
-    height: auto;
-    margin-top: -100px;
+    width: 292px;
+    height: 302px;
+    margin-top: -58px;
     padding-bottom: 20px;
     z-index: 1;
+  }
+
+  .features__image-item {
+    height: auto;
   }
 
   .features__list {
@@ -223,6 +240,7 @@
     line-height: 30px;
     text-align: center;
     margin: 0 auto;
+    padding-top: 37px;
     padding-bottom: 24px;
   }
 

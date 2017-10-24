@@ -15,6 +15,30 @@
     padding: 59px 36px 52px 21px;
   }
 
+  .effect__image {
+    width: 238px;
+    height: 276px;
+    box-sizing: border-box;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 103px;
+    padding-left: 17px;
+  }
+
+  .effect__image--text {
+    width: 202px;
+    height: 202px;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    padding: 15px 32px 27px;
+    background-color: $white;
+    color: $pink;
+    border: 15px solid $pink;
+    border-radius: 50%;
+  }
+
   .effect__info {
     width: 296px;
   }
@@ -66,7 +90,7 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 57px;
+    padding-bottom: 66px;
   }
 
   .effect__info {
@@ -103,7 +127,28 @@
   }
 
   .effect__image {
-    // padding-left: 10px;
-    padding-top: 33px;
+    width: 298px;
+    height: 345px;
+    box-sizing: border-box;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 36px;
+    margin-left: 2px;
+    padding-top: 129px;
+    padding-left: 21px;
+  }
+
+  .effect__image--text {
+    width: 253px;
+    height: 253px;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+    padding: 21px 41px 34px;
+    background-color: $white;
+    color: $pink;
+    border: 18px solid $pink;
+    border-radius: 50%;
   }
 }

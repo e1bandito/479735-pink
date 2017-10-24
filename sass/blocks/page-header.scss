@@ -5,66 +5,100 @@
   background-color: $dark-blue;
 }
 
-// .page-header__opacity {
-//   position: absolute;
-//   background-color: rgba(40, 54, 69, 0.7);
-// }
+.page-header__opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparentize($black, 0.7);
+  z-index: 999;
+}
 
 .page-header__logo {
   display: block;
   width: 75px;
   height: 22px;
   padding: 21px 0 27px 20px;
+  background-image: url("../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  text-indent: 150%;
+  white-space: nowrap;
+  overflow: hidden;
 
-  &:hover path {
-    fill: $pink;
+  &:hover {
+    background-image: url("../img/logo-pink-white-mobile-hover.svg");
   }
 
-  &:active path {
-    fill: transparentize($pink, 0.3);
+  &:active {
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    opacity: 0.3;
   }
 }
 
-.page-header__logo svg {
-  pointer-events: none;
-}
-
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .page-header {
     width: 100%;
   }
 
   .page-header__wrapper {
-    //  width: 660px;
     margin: 0 auto;
+    padding-top: 27px;
   }
 
   .page-header__logo {
-    padding: 43px 0 45px 93px;
+    width: 150px;
+    height: 40px;
+    padding: 0 0 43px 16px;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    background-position: top right;
+
+    &:hover {
+      background-image: url("../img/logo-pink-white-tablet-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/logo-pink-white-tablet.svg");
+      opacity: 0.3;
+    }
   }
 }
-
 
 @media (min-width: 960px) {
   .page-header {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
+    background-color: $dark-blue;
   }
 
   .page-header__wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     width: 960px;
     margin: 0 auto;
+    padding: 28px 0 40px 8px;
   }
 
   .page-header__logo {
-    padding-left: 0;
+    width: 150px;
+    height: 40px;
+    background-image: url("../img/logo-pink-white-desktop.svg");
+    background-position: center center;
+    padding: 0;
+
+    &:hover {
+      background-image: url("../img/logo-pink-white-desktop-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/logo-pink-white-desktop.svg");
+      opacity: 0.3;
+    }
   }
 
-  .page-header__opacity {
+  .page-header__opacity--desktop {
     position: absolute;
     top: 0;
     left: 0;

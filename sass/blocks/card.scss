@@ -7,8 +7,10 @@
   padding-bottom: 19px;
 }
 
-.card__panorama-image {
-  margin-bottom: -10px;
+.card__panorama-bg {
+  display: block;
+  min-height: 137px;
+  background-color: #8498a5;
 }
 
 .card__panorama-daily-image {
@@ -37,8 +39,8 @@
 .card__panorama-info {
   background-color: $light-grey;
   color: $dark-blue;
-  margin: 0 20px 0 20px;
-  padding: 21px 18px 0;
+  margin: 0 20px;
+  padding: 19px 18px 0;
 }
 
 .card__panorama-user-name {
@@ -101,16 +103,21 @@
   margin-bottom: 21px;
 }
 
-.card__link {
-  width: 280px;
-  height: auto;
+.card__image {
   display: block;
+  min-height: 180px;
+  background-color: #ecd6ae;
+}
+
+.card__link {
+  display: block;
+  min-height: 180px;
 }
 
 .card__info {
   background-color: $light-grey;
   color: $dark-blue;
-  padding: 11px 18px 20px 18px;
+  padding: 18px 18px 20px 18px;
 }
 
 .card__user-name {
@@ -178,12 +185,16 @@
     height: auto;
   }
 
+  .card__panorama-bg {
+    min-height: 509px;
+  }
+
   .card__panorama-info {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    padding: 18px 27px 25px;
+    padding: 15px 27px 25px;
   }
 
   .card__panorama-user-name {
@@ -218,17 +229,17 @@
 
   .card__info {
     width: 300px;
-    min-height: 148px;
+    min-height: 154px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 17px 18px 23px 28px;
+    padding: 24px 18px 21px 28px;
   }
 
   .card__link {
     width: 300px;
-    height: auto;
+    min-height: 300px;
     display: block;
   }
 
@@ -256,6 +267,11 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 46px;
+  }
+
+  .card__panorama-bg {
+    min-height: 506px;
   }
 
   .card__panorama-link {
@@ -276,21 +292,21 @@
   }
 
   .card {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .card__link {
     width: 300px;
-    height: auto;
+    min-height: 400px;
     display: block;
   }
 
   .page-main article:nth-of-type(3),
   .page-main article:nth-of-type(5) {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .card__info {
-    min-height: 148px;
+    min-height: 156px;
   }
 }

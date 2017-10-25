@@ -34,7 +34,7 @@ gulp.task("style", function() {
 });
 
 //Минификация JS
-gulp.task("compress", function (cb) {
+gulp.task("js", function (cb) {
   pump([
         gulp.src(["js/*.js","!js/*.min.js"]),
         uglify()
@@ -106,7 +106,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "style",
-    "compress",
+    "js",
     "sprite",
     "html",
     done
@@ -122,7 +122,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("js/*.js", ["js"]);
+  gulp.watch("sass/**/*.scss", ["style"]).on("change", server.reload);
+  gulp.watch("js/*.js", ["js"]).on("change", server.reload);
   gulp.watch("*.html", ["html"]).on("change", server.reload);
 });

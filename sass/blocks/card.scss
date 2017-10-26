@@ -74,7 +74,7 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $pink;
-  padding: 10px 0 20px 32px;
+  padding: 8px 0 20px 32px;
   margin: 0;
 
   &::before {
@@ -211,7 +211,8 @@
     padding-bottom: 0;
 
     &::before {
-      left: 140px;
+      top: 12px;
+      left: 136px;
     }
   }
 
@@ -252,7 +253,8 @@
     padding-left: 0;
 
     &::before {
-      left: 227px;
+      top: 12px;
+      left: 226px;
     }
   }
 }
@@ -288,7 +290,7 @@
 
   .card__panorama-daily-image {
     top: 40px;
-    right: 130px;
+    right: 10px;
   }
 
   .card {

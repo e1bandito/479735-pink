@@ -14,7 +14,7 @@
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header page-header__opacity--desktop">
+  <header class="page-header page-header--opacity-desktop">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="./index.html">Логотип</a>
       <nav class="main-nav">
@@ -24,7 +24,7 @@
             <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">Главная</a>
             </li>
-            <li class="main-nav__item   main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active">Фотографии</a>
             </li>
             <li class="main-nav__item">
@@ -44,10 +44,10 @@
       <h1 class="intro__title intro__title--photo intro__title--position">Фотографии пользователей</h1>
     </section>
     <p class="page-main__intro page-main__intro--foto">Взгляните на фотографии, которые выкладывают <br class="page-main__hide"> пользователи! Видите, как не хватает ваших?</p>
-    <article class="card__panorama">
+    <article class="card-panorama">
       <h2 class="visually-hidden">Фотография пользователя</h2>
-      <div class="card__panorama-image">
-        <a class="card__panorama-link" href="#">
+      <div class="card-panorama__image">
+        <a class="card-panorama__link" href="#">
           <picture>
             <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
 
@@ -61,18 +61,18 @@
 
             <source media="(min-width: 320px)" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x">
 
-            <img class="card__panorama-bg" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+            <img class="card-panorama__bg" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
           </picture>
         </a>
-        <p class="card__panorama-daily-image">Панорама дня</p>
+        <p class="card-panorama__daily-image">Панорама дня</p>
       </div>
-      <div class="card__panorama-info">
-        <p class="card__panorama-user-name">Анна <span class="card__panorama-time">(5 минут назад)</span></p>
-        <p class="card__panorama-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <p class="card__panorama-like">Нравится: 215</p>
+      <div class="card-panorama__info">
+        <p class="card-panorama__user-name">Анна <span class="card-panorama__time">(5 минут назад)</span></p>
+        <p class="card-panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="card-panorama__like">Нравится: 215</p>
       </div>
     </article>
-    <div class="card__wrapper">
+    <div class="card-wrapper">
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <a class="card__link" href="#">

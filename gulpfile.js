@@ -36,12 +36,12 @@ gulp.task("style", function() {
 //Минификация JS
 gulp.task("js", function (cb) {
   pump([
-        gulp.src(["js/*.js","!js/*.min.js"]),
-        uglify()
-        .pipe(rename({suffix: ".min"})),
-        gulp.dest("build/js")
-    ],
-    cb
+    gulp.src(["js/*.js","!js/*.min.js"]),
+    uglify()
+    .pipe(rename({suffix: ".min"})),
+    gulp.dest("build/js")
+  ],
+  cb
   );
 });
 
@@ -89,15 +89,15 @@ gulp.task("clean", function () {
 
 //Копирование в build
 gulp.task("copy", function () {
-    return gulp.src([
-      "fonts/**/*.{woff,woff2}",
-      "img/**",
-      "js/**"
-    ], {
-      base: "."
-    })
-    .pipe(gulp.dest("build"));
-  });
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
 
 
 //Запуск сборки

@@ -71,6 +71,14 @@
     padding-top: 43px;
     padding-bottom: 69px;
   }
+
+  .page-main__wrapper {
+    width: 644px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -99,5 +107,10 @@
 
   .page-main__intro--form {
     width: 960px;
+  }
+
+  .page-main__wrapper {
+    width: 956px;
+    margin: 0 auto;
   }
 }

@@ -14,11 +14,15 @@
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
+  <!-- Для header, при рабочем JS, добавляется класс page-header__opacity для прозрачности хедера на мобильной и планшетной версии. -->
   <header class="page-header page-header--opacity-desktop">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="./index.html">Логотип</a>
+      <!-- Для nav, при рабочем JS, добавляется класс main-nav__hide, который скрывает меню на мобильной и планшетной версии. -->
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <!-- Для button, при рабочем JS, добавляется класс main-nav__burger, который ставит иконку "бутерброда". -->
+        <!-- Для button, при отключенном JS, класс main-nav__toggle--hide скрываает кнопку "бутерброда". -->
+        <button class="main-nav__toggle main-nav__toggle--hide" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -72,7 +76,7 @@
         <p class="card-panorama__like">Нравится: 215</p>
       </div>
     </article>
-    <div class="card-wrapper">
+    <div class="page-main__wrapper">
       <article class="card">
         <h2 class="visually-hidden">Фотография пользователя</h2>
         <a class="card__link" href="#">

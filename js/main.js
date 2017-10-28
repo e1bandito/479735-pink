@@ -4,7 +4,9 @@ var mainNav = document.querySelector(".main-nav__list");
 var imagePosition = document.querySelector(".intro");
 var titlePosition = document.querySelector(".intro__title");
 var marketImage = document.querySelector(".market");
+var buttonVisible = document.querySelector(".main-nav__toggle--hide");
 
+buttonVisible.classList.remove("main-nav__toggle--hide");
 button.classList.add("main-nav__burger");
 header.classList.add("page-header__opacity");
 mainNav.classList.add("main-nav__hide");

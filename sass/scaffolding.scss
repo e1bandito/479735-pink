@@ -48,20 +48,3 @@ img {
   padding: 0;
   border: 0;
 }
-
-@media (min-width: 660px) {
-  .card-wrapper {
-    width: 644px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 960px) {
-  .card-wrapper {
-    width: 956px;
-    margin: 0 auto;
-  }
-}

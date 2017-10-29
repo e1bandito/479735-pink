@@ -88,29 +88,28 @@
   overflow: hidden;
 }
 
-.market__link--apple {
+.market__link {
   display: block;
-  height: 67px;
-  background-image: url("../img/logo-apple.svg");
-  background-position: 25px 2px;
   background-repeat: no-repeat;
 }
 
+.market__link--apple {
+  height: 67px;
+  background-image: url("../img/logo-apple.svg");
+  background-position: 25px 2px;
+}
+
 .market__link--android {
-  display: block;
   height: 54px;
   background-image: url("../img/logo-android.svg");
   background-position: 26px 10px;
-  background-repeat: no-repeat;
   padding-top: 5px;
 }
 
 .market__link--windowsphone {
-  display: block;
   height: 60px;
   background-image: url("../img/logo-microsoft.svg");
   background-position: 25px 15px;
-  background-repeat: no-repeat;
 }
 
 .market__info {

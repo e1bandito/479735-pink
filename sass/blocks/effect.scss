@@ -74,6 +74,10 @@
   .effect__title--tablet-hide {
     display: none;
   }
+
+  .effect__text--tablet-hide {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -122,7 +126,15 @@
     display: none;
   }
 
+  .effect__text--desktop-hide {
+    display: none;
+  }
+
   .effect__title--tablet-hide {
+    display: block;
+  }
+
+  .effect__text--tablet-hide {
     display: block;
   }
 

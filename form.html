@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Конкурс</title>
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
@@ -35,7 +36,7 @@
               <a class="main-nav__link main-nav__link--active">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">Html Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -63,27 +64,27 @@
       <div class="contest-form__achievements">
         <div class="contest-form__achievements-wrapper">
           <h3 class="contest-form__title">Ваши безбашенные достижения в путешествии</h3>
-          <label for="shark" class="contest-form__checkbox-label contest-form__checkbox-label--order1">
+          <label for="shark" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="selfie with shark" id="shark" checked>
             <span class="contest-form__checkbox-indikator"></span>
             Сделал селфи с акулой</label>
-          <label for="beach" class="contest-form__checkbox-label contest-form__checkbox-label--order4">
+          <label for="beach" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="Burnt on the beach" id="beach" checked>
             <span class="contest-form__checkbox-indikator"></span>
             Обгорел на пляже</label>
-          <label for="fatality" class="contest-form__checkbox-label contest-form__checkbox-label--order2">
+          <label for="fatality" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="I saw Chuck Norris" id="fatality">
             <span class="contest-form__checkbox-indikator"></span>
             Видел Чака Норриса</label>
-          <label for="souvenir" class="contest-form__checkbox-label contest-form__checkbox-label--order5">
+          <label for="souvenir" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="buy souvenirs" id="souvenir">
             <span class="contest-form__checkbox-indikator"></span>
             Накупил сувениров</label>
-          <label for="tower" class="contest-form__checkbox-label contest-form__checkbox-label--order3">
+          <label for="tower" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="protect the tower" id="tower" checked>
             <span class="contest-form__checkbox-indikator"></span>
             Удержал башню</label>
-          <label for="hotel" class="contest-form__checkbox-label contest-form__checkbox-label--order6">
+          <label for="hotel" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="checkbox" name="destroy hotel" id="hotel">
             <span class="contest-form__checkbox-indikator"></span>
             Разгромил отель</label>
@@ -108,15 +109,15 @@
           <label for="ios" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="radio" id="ios" name="os" value="ios" checked>
             <span class="contest-form__checkbox-radioindikator"></span>
-          Pink для iOS</label>
+            Pink для iOS</label>
           <label for="android" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="radio" id="android" name="os" value="android">
             <span class="contest-form__checkbox-radioindikator"></span>
-          Pink на Android</label>
+            Pink на Android</label>
           <label for="windows-phone" class="contest-form__checkbox-label">
             <input class="contest-form__checkbox visually-hidden" type="radio" id="windows-phone" name="os" value="windpws-phone">
             <span class="contest-form__checkbox-radioindikator"></span>
-          Windows Phone</label>
+            Windows Phone</label>
         </div>
       </div>
       <div class="contest-form__impression">
@@ -125,7 +126,7 @@
       </div>
       <div class="contest-form__submit">
         <button class="button contest-form__button" type="submit">Отправить форму</button>
-        <p class="contest-form__text"><span class="contest-form__text--red">*</span> — обязательные <span class="contest-form__text--hide">для заполнения</span> поля</p>
+        <p class="contest-form__text"><span class="contest-form__text contest-form__text--red">*</span> — обязательные <span class="contest-form__text contest-form__text--hide">для заполнения</span> поля</p>
       </div>
     </form>
   </main>

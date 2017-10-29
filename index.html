@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="preload" href="/fonts/opensans.woff2" as="font">
     <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
@@ -55,13 +56,13 @@
             <a href="https://www.apple.com/ru/itunes/" class="button market__link-market">Скачать приложение</a>
             <ul class="market__list">
               <li class="market__item">
-                <a href="https://www.apple.com/ru/itunes/" class="market__link--apple">Apple</a>
+                <a href="https://www.apple.com/ru/itunes/" class="market__link market__link--apple">Apple</a>
               </li>
               <li class="market__item">
-                <a href="https://play.google.com/store?hl=ru" class="market__link--android">Android</a>
+                <a href="https://play.google.com/store?hl=ru" class="market__link market__link--android">Android</a>
               </li>
               <li class="market__item">
-                <a href="https://www.microsoft.com/ru-ru/store/apps" class="market__link--windowsphone">Windows Phone</a>
+                <a href="https://www.microsoft.com/ru-ru/store/apps" class="market__link market__link--windowsphone">Windows Phone</a>
               </li>
             </ul>
             <p class="market__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -81,7 +82,7 @@
               </li>
               <li class="features-item">
                 <h3 class="features-item__title">Меняет мир вокруг</h3>
-                <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br class="feature-item__text--br"> усилить эффект</p>
+                <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br class="features-item__text feature-item__text--br"> усилить эффект</p>
               </li>
               <li class="features-item">
                 <h3 class="features-item__title">Заводит новых друзей</h3>
@@ -133,8 +134,8 @@
             <span class="effect__image-text">24</span>
           </div>
           <div class="effect__info">
-            <h2 class="effect__title">Эффект<br class="effect__title--desktop-hide"> на 24 часа!</h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__title--tablet-hide"> что положительный эффект <br class="effect__title--desktop-hide"> от использования приложения длится целые сутки!</p>
+            <h2 class="effect__title">Эффект<br class="effect__title effect__title--desktop-hide"> на 24 часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__text effect__text--tablet-hide"> что положительный эффект <br class="effect__text effect__text--desktop-hide"> от использования приложения длится целые сутки!</p>
             <a class="effect__link" href="">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -143,9 +144,9 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper slider">
-          <input class="slider__button--1 visually-hidden" type="radio" id="button-1" name="toggle" checked>
-          <input class="slider__button--2 visually-hidden" type="radio" id="button-2" name="toggle">
-          <input class="slider__button--3 visually-hidden" type="radio" id="button-3" name="toggle">
+          <input class="slider__button slider__button--1 visually-hidden" type="radio" id="button-1" name="toggle" checked>
+          <input class="slider__button slider__button--2 visually-hidden" type="radio" id="button-2" name="toggle">
+          <input class="slider__button slider__button--3 visually-hidden" type="radio" id="button-3" name="toggle">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <div class="reviews__item-wrapper">
@@ -184,9 +185,9 @@
       <section class="tariff-plan">
         <h2 class="visually-hidden">Тарифный план</h2>
         <div class="tariff-plan__wrapper slider">
-          <input class="slider__button--4 visually-hidden" type="radio" id="button-4" name="tariff-plan-toggle">
-          <input class="slider__button--5 visually-hidden" type="radio" id="button-5" name="tariff-plan-toggle" checked>
-          <input class="slider__button--6 visually-hidden" type="radio" id="button-6" name="tariff-plan-toggle">
+          <input class="slider__button slider__button--4 visually-hidden" type="radio" id="button-4" name="tariff-plan-toggle">
+          <input class="slider__button slider__button--5 visually-hidden" type="radio" id="button-5" name="tariff-plan-toggle" checked>
+          <input class="slider__button slider__button--6 visually-hidden" type="radio" id="button-6" name="tariff-plan-toggle">
           <ul class="tariff-plan__list slider__list">
             <li class="tariff-plan__item">
               <p class="tariff-plan__text tariff-plan__text--visible">Розовый фильтр</p>
@@ -221,7 +222,7 @@
               <p class="tariff-plan__text tariff-plan__text--on-comment">Комментарии</p>
             </li>
           </ul>
-          <div class="slider__controls--tariff-plan">
+          <div class="slider__controls slider__controls--tariff-plan">
             <label for="button-4"></label>
             <label for="button-5"></label>
             <label for="button-6"></label>
@@ -238,7 +239,7 @@
           </div>
           <div class="contacts__email">
             <b class="contacts__subtitle">Пишите:</b>
-            <p class="contacts__text"><a class="contacts__text--email" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+            <p class="contacts__text"><a class="contacts__text contacts__text--email" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
           </div>
           <div class="contacts__adress">
             <b class="contacts__subtitle">Приезжайте в гости:</b>

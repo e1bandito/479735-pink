@@ -80,6 +80,19 @@
   cursor: pointer;
 }
 
+.contest-form__checkbox-label {
+  &:hover .contest-form__checkbox-indikator,
+  &:hover .contest-form__checkbox-radioindikator {
+    border: 2px solid $black;
+  }
+
+  &:active .contest-form__checkbox-indikator,
+  &:active .contest-form__checkbox-radioindikator {
+    outline: none;
+    border: 2px solid $pink;
+  }
+}
+
 .contest-form__checkbox-indikator {
   position: absolute;
   display: block;
@@ -507,6 +520,7 @@
 
   .contest-form__full-name {
     width: 433px;
+    height: 100%;
     margin: 0;
     margin-top: 11px;
   }
@@ -632,48 +646,49 @@
     padding-left: 56px;
   }
 
-  .contest-form__achievements-wrapper label:nth-of-type(3n+1) {
+  .contest-form__achievements-wrapper label:nth-of-type(1) {
     width: 255px;
+    order: 1;
   }
 
   .contest-form__achievements-wrapper label:nth-of-type(2) {
     width: 255px;
+    order: 4;
   }
 
   .contest-form__achievements-wrapper label:nth-of-type(3) {
     width: 235px;
+    order: 2;
   }
 
   .contest-form__achievements-wrapper label:nth-of-type(4) {
     width: 235px;
+    order: 5;
+  }
+
+  .contest-form__achievements-wrapper label:nth-of-type(5) {
+    width: 150px;
+    order: 3;
+  }
+
+  .contest-form__achievements-wrapper label:nth-of-type(6) {
+    width: 150px;
+    order: 6;
+  }
+
+  .contest-form__achievements-wrapper label:nth-of-type(3n+7) {
+    width: 255px;
+    order: 7;
   }
 
   .contest-form__achievements-wrapper label:nth-of-type(3n+8) {
     width: 235px;
+    order: 7;
   }
 
-  .contest-form__checkbox-label--order1 {
-    order: 1;
-  }
-
-  .contest-form__checkbox-label--order4 {
-    order: 4;
-  }
-
-  .contest-form__checkbox-label--order2 {
-    order: 2;
-  }
-
-  .contest-form__checkbox-label--order5 {
-    order: 5;
-  }
-
-  .contest-form__checkbox-label--order3 {
-    order: 3;
-  }
-
-  .contest-form__checkbox-label--order6 {
-    order: 6;
+  .contest-form__achievements-wrapper label:nth-of-type(3n+9) {
+    width: 150px;
+    order: 7;
   }
 
   .contest-form__impression {

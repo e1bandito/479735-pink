@@ -17,6 +17,7 @@ var run = require("run-sequence");
 var svgstore = require("gulp-svgstore");
 var uglify = require("gulp-uglify");
 var webp = require("gulp-webp");
+var ghPages = require('gulp-gh-pages');
 
 //Автопрефиксер и минификация
 gulp.task("style", function() {
@@ -121,6 +122,11 @@ gulp.task("serve", function() {
     cors: true,
     ui: false
   });
+
+  gulp.task('ghPages', function() {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
+});
 
   gulp.watch("sass/**/*.scss", ["style"]).on("change", server.reload);
   gulp.watch("js/*.js", ["js"]).on("change", server.reload);

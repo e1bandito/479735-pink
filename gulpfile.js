@@ -114,6 +114,11 @@ gulp.task("build", function (done) {
   );
 });
 
+gulp.task('ghPages', function() {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build/",
@@ -122,11 +127,6 @@ gulp.task("serve", function() {
     cors: true,
     ui: false
   });
-
-  gulp.task('ghPages', function() {
-  return gulp.src('build/**/*')
-    .pipe(ghPages());
-});
 
   gulp.watch("sass/**/*.scss", ["style"]).on("change", server.reload);
   gulp.watch("js/*.js", ["js"]).on("change", server.reload);

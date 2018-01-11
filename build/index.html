@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+
+  <body>
+    <div style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="sprite-icon-facebook" viewbox="0 0 8.673 18.944"><path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"></path></symbol><symbol id="sprite-icon-twitter" viewbox="0 0 17.5 14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z"></path></symbol><symbol id="sprite-icon-youtube" viewbox="0 0 14.64 13.96"><path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"></path></symbol><symbol id="sprite-logo-htmlacademy" viewbox="0 0 26.943 34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"></path></symbol></svg>
+    </div>
+    <!-- Для header, при рабочем JS, добавляется класс page-header__opacity для прозрачности хедера на мобильной и планшетной версии. -->
+    <header class="page-header page-header--opacity-desktop">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">Логотип</a>
+        <!-- Для nav, при рабочем JS, добавляется класс main-nav__hide, который скрывает меню на мобильной и планшетной версии. -->
+        <nav class="main-nav">
+          <!-- Для button, при рабочем JS, добавляется класс main-nav__burger, который ставит иконку "бутерброда". -->
+          <!-- Для button, при отключенном JS, класс main-nav__toggle--hide скрываает кнопку "бутерброда". -->
+          <button class="main-nav__toggle main-nav__toggle--hide" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="./photo.html" class="main-nav__link">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="./form.html" class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink</h1>
+      <section class="market market__image-position">
+        <div class="market__wrapper">
+          <div class="market__image-wrapper"></div>
+          <div class="market__nav">
+            <h2 class="market__title">Взгляните на жизнь иначе!</h2>
+            <a href="https://www.apple.com/ru/itunes/" class="button market__link-market">Скачать приложение</a>
+            <ul class="market__list">
+              <li class="market__item">
+                <a href="https://www.apple.com/ru/itunes/" class="market__link market__link--apple">Apple</a>
+              </li>
+              <li class="market__item">
+                <a href="https://play.google.com/store?hl=ru" class="market__link market__link--android">Android</a>
+              </li>
+              <li class="market__item">
+                <a href="https://www.microsoft.com/ru-ru/store/apps" class="market__link market__link--windowsphone">Windows Phone</a>
+              </li>
+            </ul>
+            <p class="market__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="features__title">Устали от серости мегаполиса?</h2>
+        <h2 class="features__title">Нам есть, что вам предложить!</h2>
+        <div class="features__wrapper">
+          <div class="features__container">
+            <ul class="features__list">
+              <li class="features-item">
+                <h3 class="features-item__title">Поднимает настроение</h3>
+                <p class="features-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features-item">
+                <h3 class="features-item__title">Меняет мир вокруг</h3>
+                <p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br class="features-item__text feature-item__text--br"> усилить эффект</p>
+              </li>
+              <li class="features-item">
+                <h3 class="features-item__title">Заводит новых друзей</h3>
+                <p class="features-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <div class="features__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@2x.webp 2x, img/iphone-screen-1-desktop@1x.webp 1x">
+
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@2x.webp 2x, img/iphone-screen-3-tablet@1x.webp 1x">
+
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+
+                <source media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x">
+
+                <img class="features__image-item" src="img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран">
+              </picture>
+            </div>
+            <div class="features__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@2x.webp 2x, img/iphone-screen-2-desktop@1x.webp 1x">
+
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+
+                <img class="features__image-item" src="img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран">
+              </picture>
+            </div>
+            <div class="features__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@2x.webp 2x, img/iphone-screen-3-desktop@1x.webp 1x">
+
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+
+                <img class="features__image-item" src="img/iphone-screen-mobile@1x.png" alt="Iphone 8 экран">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="effect">
+        <div class="effect__wrapper">
+          <div class="effect__image">
+            <span class="effect__image-text">24</span>
+          </div>
+          <div class="effect__info">
+            <h2 class="effect__title">Эффект<br class="effect__title effect__title--desktop-hide"> на 24 часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__text effect__text--tablet-hide"> что положительный эффект <br class="effect__text effect__text--desktop-hide"> от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__wrapper slider">
+          <input class="slider__button slider__button--1 visually-hidden" type="radio" id="button-1" name="toggle" checked="">
+          <input class="slider__button slider__button--2 visually-hidden" type="radio" id="button-2" name="toggle">
+          <input class="slider__button slider__button--3 visually-hidden" type="radio" id="button-3" name="toggle">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <div class="reviews__item-wrapper">
+                <h3 class="reviews__title">Николай Петров</h3>
+                <span class="reviews__id">25 лет, водитель трамвая</span>
+                <p class="reviews__text"><span class="reviews__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote-hide">»</span></p>
+              </div>
+            </li>
+            <li class="reviews__item slider__item">
+              <div class="reviews__item-wrapper">
+                <h3 class="reviews__title">Петр Николаев</h3>
+                <span class="reviews__id">25 лет, водитель трамвая</span>
+                <p class="reviews__text"><span class="reviews__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote-hide">»</span></p>
+              </div>
+            </li>
+            <li class="reviews__item slider__item">
+              <div class="reviews__item-wrapper">
+                <h3 class="reviews__title">Николай Сидоров</h3>
+                <span class="reviews__id">25 лет, водитель трамвая</span>
+                <p class="reviews__text"><span class="reviews__quote-hide">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__quote-hide">»</span></p>
+              </div>
+            </li>
+          </ul>
+          <div class="reviews__controls">
+            <button class="reviews__button-prev">Предыдущий отзыв</button>
+            <button class="reviews__button-next">Следующий отзыв</button>
+          </div>
+          <div class="slider__controls">
+            <label for="button-1"></label>
+            <label for="button-2"></label>
+            <label for="button-3"></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="tariff-plan">
+        <h2 class="visually-hidden">Тарифный план</h2>
+        <div class="tariff-plan__wrapper slider">
+          <input class="slider__button slider__button--4 visually-hidden" type="radio" id="button-4" name="tariff-plan-toggle">
+          <input class="slider__button slider__button--5 visually-hidden" type="radio" id="button-5" name="tariff-plan-toggle" checked="">
+          <input class="slider__button slider__button--6 visually-hidden" type="radio" id="button-6" name="tariff-plan-toggle">
+          <ul class="tariff-plan__list slider__list">
+            <li class="tariff-plan__item">
+              <p class="tariff-plan__text tariff-plan__text--visible">Розовый фильтр</p>
+              <p class="tariff-plan__text tariff-plan__text--visible">Смайлики</p>
+              <p class="tariff-plan__text tariff-plan__text--visible">Комментарии</p>
+            </li>
+            <li class="tariff-plan__item">
+              <div class="tariff-plan__header">
+                <h3 class="tariff-plan__title">База</h3>
+                <p class="tariff-plan__price">1,99 usd</p>
+              </div>
+              <p class="tariff-plan__text tariff-plan__text--on-filter">Розовый фильтр</p>
+              <p class="tariff-plan__text tariff-plan__text--off-smile">Смайлики</p>
+              <p class="tariff-plan__text tariff-plan__text--off-comment">Комментарии</p>
+            </li>
+            <li class="tariff-plan__item">
+              <div class="tariff-plan__header tariff-plan__header--hit">
+                <h3 class="tariff-plan__title">Стандарт</h3>
+                <p class="tariff-plan__price">3,99 usd</p>
+              </div>
+              <p class="tariff-plan__text tariff-plan__text--on-filter">Розовый фильтр</p>
+              <p class="tariff-plan__text tariff-plan__text--on-smile">Смайлики</p>
+              <p class="tariff-plan__text tariff-plan__text--off-comment">Комментарии</p>
+            </li>
+            <li class="tariff-plan__item">
+              <div class="tariff-plan__header">
+                <h3 class="tariff-plan__title">Анлим</h3>
+                <p class="tariff-plan__price">9,99 usd</p>
+              </div>
+              <p class="tariff-plan__text tariff-plan__text--on-filter">Розовый фильтр</p>
+              <p class="tariff-plan__text tariff-plan__text--on-smile">Смайлики</p>
+              <p class="tariff-plan__text tariff-plan__text--on-comment">Комментарии</p>
+            </li>
+          </ul>
+          <div class="slider__controls slider__controls--tariff-plan">
+            <label for="button-4"></label>
+            <label for="button-5"></label>
+            <label for="button-6"></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__phone">
+            <b class="contacts__subtitle">Звоните:</b>
+            <p class="contacts__text">+7 (812) 555-66-66</p>
+          </div>
+          <div class="contacts__email">
+            <b class="contacts__subtitle">Пишите:</b>
+            <p class="contacts__text"><a class="contacts__text contacts__text--email" href="mailto:mail@htmlacademy.ru"> mail@htmlacademy.ru</a></p>
+          </div>
+          <div class="contacts__adress">
+            <b class="contacts__subtitle">Приезжайте в гости:</b>
+            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
+      </section>
+      <div id="map" class="mymap"></div>
+    </main>
+
+    <footer class="page-footer page-footer--hide">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">Логотип</a>
+        <div class="page-footer__social page-footer__social--index">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link page-footer__link--twitter">Twitter
+                <svg width="18" height="15">
+                  <use xlink:href="#sprite-icon-twitter" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link page-footer__link--facebook">Facebook
+                <svg width="9" height="19">
+                  <use xlink:href="#sprite-icon-facebook" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a href="#" class="page-footer__link page-footer__link--youtube">YouTube
+                <svg width="15" height="14">
+                  <use xlink:href="#sprite-icon-youtube" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <p class="page-footer__text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
+            <svg width="27" height="35">
+              <use xlink:href="#sprite-logo-htmlacademy" x="0" y="0"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/main.min.js"></script>
+    <script src="./js/picturefill.min.js"></script>
+    <script src="./js/ymap.min.js"></script>
+
+  </body>
+</html>
